@@ -1,3 +1,5 @@
 # Launch, Scale, Succeed: Mastering DigitalOcean in 4 Hours
 
-## Example 3
+## Funko Showcase Workshop
+
+### Presenters: Jeff Blankenburg & Chris DeMars
