@@ -15,3 +15,6 @@
 |                          | 0:10 - Install and configure the DigitalOcean CLI (doctl)                      |
 | Database Creation - 0:30 |                                                                                |
 |                          | 0:20 - Get Database configured and running                                     |
+|                          | 0:10 - Data ingestion                                                          |
+| Storage Creation - 0:15  |                                                                                |
+|                          | 0:15 - Create Storage Bucket and upload images                                 |
