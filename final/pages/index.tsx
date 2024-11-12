@@ -32,7 +32,7 @@ export const getServerSideProps: GetServerSideProps<IndexProps> = async () => {
     return {
       props: {
         isConnected: true,
-        encounters: JSON.parse(JSON.stringify(encounters)),
+        funkos: JSON.parse(JSON.stringify(funkos)),
       },
     };
   } catch (e) {
@@ -55,7 +55,7 @@ export default function Home({
     );
   };
 
-  const filteredFunkoos = funkos.filter(filterFunkos);
+  const filteredFunkos = funkos.filter(filterFunkos);
 
   return (
     <>
