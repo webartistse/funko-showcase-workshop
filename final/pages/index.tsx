@@ -4,10 +4,10 @@ import type { InferGetServerSidePropsType, GetServerSideProps } from "next";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import Header from "../components/Header/Header";
-import EncounterCard from "../components/EncounterCard/EncounterCard";
+import FunkoCard from "../components/FunkoCard/FunkoCard";
 import { useState } from "react";
 import { IndexProps } from "../types";
-import { Encounter } from "../types/encounter";
+import { Funko } from "../types/Funko";
 import { SearchBar } from "../components/SearchBar/SearchBar";
 
 export const getServerSideProps: GetServerSideProps<IndexProps> = async () => {
@@ -38,32 +38,32 @@ export const getServerSideProps: GetServerSideProps<IndexProps> = async () => {
   } catch (e) {
     console.error(e);
     return {
-      props: { isConnected: false, encounters: [] },
+      props: { isConnected: false, funkos: [] },
     };
   }
 };
 
 export default function Home({
-  encounters,
+  funkos,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
   const [search, setSearch] = useState("");
 
-  const filterEncounters = (encounter: Encounter) => {
+  const filterFunkos = (funko: Funko) => {
     return (
-      encounter.name.toLowerCase().includes(search.toLowerCase()) ||
-      encounter.location.toLowerCase().includes(search.toLowerCase())
+      funko.name.toLowerCase().includes(search.toLowerCase()) ||
+      funko.location.toLowerCase().includes(search.toLowerCase())
     );
   };
 
-  const filteredEncounters = encounters.filter(filterEncounters);
+  const filteredFunkoos = funkos.filter(filterFunkos);
 
   return (
     <>
       <Head>
-        <title>UFO Encounters and Sightings</title>
+        <title>Funko Showcase</title>
         <meta
           name="description"
-          content="A collection of UFO, UAP, and USO sightings and encounters."
+          content="Funko Showcase."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -72,7 +72,7 @@ export default function Home({
         <SearchBar setSearch={setSearch} />
         <main>
           <Box display="grid" gridTemplateColumns="repeat(3, 1fr)" gap={4}>
-            <EncounterCard encounters={filteredEncounters} />
+            <FunkoCard funkos={filteredFunkos} />
           </Box>
         </main>
       </Container>

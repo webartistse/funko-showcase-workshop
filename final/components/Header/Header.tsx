@@ -10,7 +10,7 @@ const Header = () => {
       <AppBar position="static" sx={{ backgroundColor: '#00ff60' }}>
         <Toolbar variant="dense">
           <Typography variant="h6" component="div" sx={{ flexGrow: 1, color: 'black' }}>
-            UFO Encounters & Abductions
+            Funko Showcase
           </Typography>
         </Toolbar>
       </AppBar>
