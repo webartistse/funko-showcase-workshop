@@ -1,13 +1,12 @@
-export type Encounter = {
+export type Funko = {
   _id: string;
-  name: string;
-  location: string;
-  close_encounter_level: string;
-  extraterrestrial_type: string;
+  movie_tv_show: string;
+  character: string;
+  number: number;
   image: string;
   url: string;
 };
 
-export interface EncounterProps {
-  encounters: Encounter[];
+export interface FunkoProps {
+  funkos: Funko[];
 }

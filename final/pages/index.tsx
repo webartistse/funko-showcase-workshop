@@ -22,9 +22,9 @@ export const getServerSideProps: GetServerSideProps<IndexProps> = async () => {
     // Then you can execute queries against your database like so:
     // db.find({}) or any of the MongoDB Node Driver commands
     const client = await clientPromise;
-    const db = client.db("close-encounters");
+    const db = client.db("funko-showcase");
     const encounters = await db
-      .collection("encounters")
+      .collection("funkos")
       .find({})
       .limit(30)
       .toArray();
