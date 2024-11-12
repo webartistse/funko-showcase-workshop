@@ -4,7 +4,6 @@ export type Funko = {
   character: string;
   number: number;
   image: string;
-  url: string;
 };
 
 export interface FunkoProps {

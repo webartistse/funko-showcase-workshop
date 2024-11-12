@@ -7,7 +7,7 @@ import Header from "../components/Header/Header";
 import FunkoCard from "../components/FunkoCard/FunkoCard";
 import { useState } from "react";
 import { IndexProps } from "../types";
-import { Funko } from "../types/Funko";
+import { Funko } from "../types/funko";
 import { SearchBar } from "../components/SearchBar/SearchBar";
 
 export const getServerSideProps: GetServerSideProps<IndexProps> = async () => {
@@ -23,7 +23,7 @@ export const getServerSideProps: GetServerSideProps<IndexProps> = async () => {
     // db.find({}) or any of the MongoDB Node Driver commands
     const client = await clientPromise;
     const db = client.db("funko-showcase");
-    const encounters = await db
+    const funkos = await db
       .collection("funkos")
       .find({})
       .limit(30)
@@ -50,8 +50,8 @@ export default function Home({
 
   const filterFunkos = (funko: Funko) => {
     return (
-      funko.name.toLowerCase().includes(search.toLowerCase()) ||
-      funko.location.toLowerCase().includes(search.toLowerCase())
+      funko.movie_tv_show.toLowerCase().includes(search.toLowerCase()) ||
+      funko.character.toLowerCase().includes(search.toLowerCase())
     );
   };
 

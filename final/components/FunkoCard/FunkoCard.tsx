@@ -10,38 +10,26 @@ import { FunkoProps } from "../../types/funko";
 const FunkoCard: React.FC<FunkoProps> = ({ funkos }) => {
   return (
     <>
-      {funkos.map((funkos) => {
+      {funkos.map((funko) => {
         return (
           <Card key={funko._id} sx={{ maxWidth: 345 }}>
             <CardMedia
               component="img"
               sx={{ height: 140 }}
               image={funko.image}
-              alt={funko.name}
+              alt={funko.character}
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
-                {funko.name}
+                {funko.movie_tv_show}
+              </Typography>
+              <Typography gutterBottom variant="h5" component="div">
+                {funko.character}
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                {funko.location}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                {funko.close_encounter_level}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                Species: {funko.extraterrestrial_type}
+                {funko.number}
               </Typography>
             </CardContent>
-            <CardActions>
-              <Link
-                href={funko.url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {funko.name} Info
-              </Link>
-            </CardActions>
           </Card>
         );
       })}
