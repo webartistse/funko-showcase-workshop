@@ -15,9 +15,9 @@ const BackgroundAppBar = styled(AppBar)({
 const Header = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <BackgroundAppBar position="static">
+      <BackgroundAppBar position="static" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <Toolbar variant="dense">
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1, color: 'black' }}>
+          <Typography variant="h1" component="div" sx={{ flexGrow: 1, color: 'white', fontFamily: 'Geist Sans, Arial, sans-serif' }}>
             Funko Showcase
           </Typography>
         </Toolbar>

@@ -4,7 +4,6 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import Link from "@mui/material/Link";
 import { FunkoProps } from "../../types/funko";
 
 const FunkoCard: React.FC<FunkoProps> = ({ funkos }) => {
@@ -27,7 +26,10 @@ const FunkoCard: React.FC<FunkoProps> = ({ funkos }) => {
                 {funko.character}
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                {funko.number}
+                Released: {funko.year_release}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Number in Line: {funko.number}
               </Typography>
             </CardContent>
           </Card>
