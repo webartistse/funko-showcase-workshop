@@ -5,6 +5,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { FunkoProps } from "../../types/funko";
+import { Button } from "@mui/material";
 
 const FunkoCard: React.FC<FunkoProps> = ({ funkos }) => {
   return (
@@ -32,6 +33,11 @@ const FunkoCard: React.FC<FunkoProps> = ({ funkos }) => {
                 Number in Line: {funko.number}
               </Typography>
             </CardContent>
+            <CardActions>
+              <Button size="small" color="primary">
+                Edit
+              </Button>
+            </CardActions>
           </Card>
         );
       })}
