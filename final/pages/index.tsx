@@ -9,7 +9,6 @@ import { useState } from "react";
 import { IndexProps } from "../types";
 import { Funko } from "../types/funko";
 import { SearchBar } from "../components/SearchBar/SearchBar";
-import '../styles/styles.css';
 
 export const getServerSideProps: GetServerSideProps<IndexProps> = async () => {
   try {
