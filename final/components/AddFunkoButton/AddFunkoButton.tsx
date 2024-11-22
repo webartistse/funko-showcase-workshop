@@ -11,10 +11,11 @@ const AddFunkoButton = () => {
     numberInLine: '',
   });
 
-  const handleClickOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const handleClose = () => {
+    setOpen(false);
+  };
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
   };
@@ -26,7 +27,7 @@ const AddFunkoButton = () => {
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-      <Button variant="contained" color="secondary" onClick={handleClickOpen}>
+      <Button variant="contained" color="secondary" onClick={handleClose}>
         Add Your Funko!
       </Button>
       <Dialog open={open} onClose={handleClose}>
