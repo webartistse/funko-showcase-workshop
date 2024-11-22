@@ -30,10 +30,10 @@ const FunkoCard: React.FC<FunkoProps> = ({ funkos }) => {
               alt={funko.character}
             />
             <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
+              <Typography gutterBottom variant="h2" component="div">
                 {funko.movie_tv_show}
               </Typography>
-              <Typography gutterBottom variant="h5" component="div">
+              <Typography gutterBottom variant="h3" component="div">
                 {funko.character}
               </Typography>
               <Typography variant="body2" color="text.secondary">

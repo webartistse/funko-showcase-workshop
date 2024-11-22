@@ -23,7 +23,20 @@ body {
   );
 }
 
+h2 {
+  color: green;
+}
+
 /* Material Override CSS */
+
+.MuiTypography-h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.MuiTypography-h3 {
+  font-size: 1em;
+}
 
 .MuiInputBase-input {
   background-color: white;
