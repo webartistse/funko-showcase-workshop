@@ -8,6 +8,7 @@ import FunkoCard from "../components/FunkoCard/FunkoCard";
 import { useState } from "react";
 import { IndexProps } from "../types";
 import { Funko } from "../types/funko";
+import AddFunkoButton from "../components/AddFunkoButton/AddFunkoButton";
 import { SearchBar } from "../components/SearchBar/SearchBar";
 
 export const getServerSideProps: GetServerSideProps<IndexProps> = async () => {
@@ -70,6 +71,7 @@ export default function Home({
       <Header />
       <Container maxWidth="lg">
         <SearchBar setSearch={setSearch} />
+        <AddFunkoButton />
         <main>
           <Box display="grid" gridTemplateColumns="repeat(3, 1fr)" gap={4}>
             <FunkoCard funkos={filteredFunkos} />
