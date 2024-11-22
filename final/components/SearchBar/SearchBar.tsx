@@ -24,9 +24,9 @@ export const SearchBar = ({
     >
       <TextField
         onChange={(e) => setSearch(e.target.value)}
-        id="outlined-basic"
+        id="filled-basic"
         label="Search for your Funko!"
-        variant="outlined"
+        variant="filled"
         aria-label="Search for your Funko!"
       />
 

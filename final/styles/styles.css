@@ -1,4 +1,8 @@
+/* Custom Font Import */
+
 @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Henny+Penny&family=Outfit:wght@100..900&display=swap');
+
+/* Custom CSS */
 
 body {
   background-image: linear-gradient(
@@ -17,4 +21,10 @@ body {
     hsl(48deg 100% 50%) 92%,
     hsl(55deg 100% 50%) 100%
   );
+}
+
+/* Material Override CSS */
+
+.MuiInputBase-input {
+  background-color: white;
 }
