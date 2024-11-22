@@ -23,11 +23,11 @@ body {
   );
 }
 
-h2 {
-  color: green;
-}
-
 /* Material Override CSS */
+
+.MuiTypography-h1 {
+  
+}
 
 .MuiTypography-h2 {
   font-size: 2em;

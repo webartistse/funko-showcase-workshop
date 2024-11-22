@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Dialog, DialogActions, DialogContent, DialogTitle, TextField } from '@mui/material';
+import { FunkoProps } from "../../types/funko";
 
 const EditFunkoButton = () => {
   const [open, setOpen] = useState(false);
