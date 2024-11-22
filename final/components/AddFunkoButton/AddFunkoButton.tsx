@@ -11,11 +11,10 @@ const AddFunkoButton = () => {
     numberInLine: '',
   });
 
-  const handleClose = () => {
-    setOpen(false);
-  };
+  const handleClickOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInputChange = (e: any) => {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
   };
@@ -26,9 +25,9 @@ const AddFunkoButton = () => {
   };
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-      <Button variant="contained" color="secondary" onClick={handleClose}>
-        Add Your Funko!
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '10px' }}>
+      <Button variant="contained" color="secondary" onClick={handleClickOpen}>
+        Add Funko!
       </Button>
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle>Enter Details</DialogTitle>
@@ -45,7 +44,7 @@ const AddFunkoButton = () => {
           />
           <TextField
             margin="dense"
-            name="dhow"
+            name="tvShow"
             label="TV/Movie Show"
             type="text"
             fullWidth

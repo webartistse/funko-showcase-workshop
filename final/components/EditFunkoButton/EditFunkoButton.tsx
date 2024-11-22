@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Dialog, DialogActions, DialogContent, DialogTitle, TextField } from '@mui/material';
-import { EditFunkoButtonProps, FunkoProps } from "../../types/funko";
 
-const EditFunkoButton: React.FC<EditFunkoButtonProps> = ({ funko }) => {
+const FormButton = () => {
   const [open, setOpen] = useState(false);
   const [formValues, setFormValues] = useState({
     imageUrl: '',
@@ -15,7 +14,7 @@ const EditFunkoButton: React.FC<EditFunkoButtonProps> = ({ funko }) => {
   const handleClickOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
-  const handleInputChange = (e: { target: { name: any; value: any; }; }) => {
+  const handleInputChange = (e: any) => {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
   };
@@ -45,7 +44,7 @@ const EditFunkoButton: React.FC<EditFunkoButtonProps> = ({ funko }) => {
           />
           <TextField
             margin="dense"
-            name="dhow"
+            name="tvShow"
             label="TV/Movie Show"
             type="text"
             fullWidth
@@ -93,4 +92,4 @@ const EditFunkoButton: React.FC<EditFunkoButtonProps> = ({ funko }) => {
   );
 };
 
-export default EditFunkoButton;
+export default FormButton;
