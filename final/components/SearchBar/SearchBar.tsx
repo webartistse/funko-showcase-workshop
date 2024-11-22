@@ -30,8 +30,8 @@ export const SearchBar = ({
         aria-label="Search for your Funko!"
       />
 
-      <Typography variant="body2" color="text.secondary">
-        *Use this search to filter down your collection of Funko's!.
+      <Typography variant="body2" color="text.primary">
+        *Use this search to filter down your collection of Funko's!. To add a Funko, click the button below!
       </Typography>
     </Box>
   );
