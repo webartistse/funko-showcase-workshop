@@ -8,7 +8,6 @@ import EditFunkoButton from "../EditFunkoButton/EditFunkoButton";
 
 const FunkoCard: React.FC<FunkoProps> = ({ funkos }) => {
 
-
   return (
     <>
       {funkos.map((funko) => {
