@@ -28,3 +28,28 @@ body {
 .MuiInputBase-input {
   background-color: white;
 }
+
+.MuiCard-root {
+  filter: drop-shadow(0 0 0.75rem rgb(179, 0, 255));
+}
+
+.MuiCard-root:hover {
+  animation: bounce 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
