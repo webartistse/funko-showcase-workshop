@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Button, Dialog, DialogActions, DialogContent, DialogTitle, TextField } from '@mui/material';
-import { FunkoProps } from "../../types/funko";
+import { EditFunkoButtonProps, FunkoProps } from "../../types/funko";
 
-const EditFunkoButton = () => {
+const EditFunkoButton: React.FC<EditFunkoButtonProps> = ({ funko }) => {
   const [open, setOpen] = useState(false);
   const [formValues, setFormValues] = useState({
     imageUrl: '',

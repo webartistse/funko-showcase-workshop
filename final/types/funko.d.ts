@@ -10,3 +10,7 @@ export type Funko = {
 export interface FunkoProps {
   funkos: Funko[];
 }
+
+interface EditFunkoButtonProps {
+  funko: Funko;
+}
