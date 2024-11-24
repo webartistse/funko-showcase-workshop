@@ -6,7 +6,9 @@ export type Funko = {
   image: string;
   year_release: number | string;
 };
-
 export interface FunkoProps {
   funkos: Funko[];
+}
+export interface EditFunkoProps {
+  funko: Funko
 }

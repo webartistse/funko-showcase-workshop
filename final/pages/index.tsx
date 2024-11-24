@@ -94,9 +94,7 @@ export default function Home({
       </footer>
 
       <style jsx>{`
-        .body {
-          background-image: url("https://archivesfoundation.org/wp-content/uploads/2019/12/ufo-7-e1575496085887-1024x518.jpg");
-        }
+
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
