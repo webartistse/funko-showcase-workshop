@@ -28,6 +28,7 @@ export const SearchBar = ({
         label="Search for your Funko!"
         variant="filled"
         aria-label="Search for your Funko!"
+        sx={{ backgroundColor: 'white' }}
       />
 
       <Typography variant="body2" color="text.primary">
