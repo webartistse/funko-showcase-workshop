@@ -20,7 +20,7 @@ const FunkoCard: React.FC<FunkoProps> = ({ funkos }) => {
               alt={funko.character}
             />
             <CardContent>
-              <Typography gutterBottom variant="h2" component="div" sx={{ fontSize: '2em' }}>
+              <Typography gutterBottom variant="h2" component="div" sx={{ fontSize: '2em', fontWeight: 'bold' }}>
                 {funko.movie_tv_show}
               </Typography>
               <Typography gutterBottom variant="h3" component="div">
