@@ -23,7 +23,7 @@ const FunkoCard: React.FC<FunkoProps> = ({ funkos }) => {
               <Typography gutterBottom variant="h2" component="div" sx={{ fontSize: '2em', fontWeight: 'bold' }}>
                 {funko.movie_tv_show}
               </Typography>
-              <Typography gutterBottom variant="h3" component="div">
+              <Typography gutterBottom variant="h3" component="div" sx={{ fontSize: '1em' }}>
                 {funko.character}
               </Typography>
               <Typography variant="body2" color="text.secondary">
