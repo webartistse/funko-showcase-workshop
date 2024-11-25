@@ -25,19 +25,6 @@ body {
 
 /* Material Override CSS */
 
-.MuiTypography-h2 {
-  font-size: 2em;
-  font-weight: bold;
-}
-
-.MuiTypography-h3 {
-  font-size: 1em;
-}
-
-.MuiInputBase-input {
-  background-color: white;
-}
-
 .MuiCard-root {
   filter: drop-shadow(0 0 0.75rem rgb(179, 0, 255));
 }
