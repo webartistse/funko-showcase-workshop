@@ -12,9 +12,14 @@
 |                          | 0:15 - Introductions, Explanations, Resources, Credit Codes                    |
 |                          | 0:05 - Setting Up Your DigitalOcean Account                                    |
 |                          | 0:10 - Make sure you have a GitHub account that you currently have acecess to. |
-|                          | 0:10 - Install and configure the DigitalOcean CLI (doctl)                      |
 | Database Creation - 0:30 |                                                                                |
 |                          | 0:20 - Get Database configured and running                                     |
 |                          | 0:10 - Data ingestion                                                          |
 | Storage Creation - 0:15  |                                                                                |
 |                          | 0:15 - Create Storage Bucket and upload images                                 |
+
+### Prerequisites
+
+- Set Up Your DigitalOcean Account
+- Set Up Your GitHub Account
+-
