@@ -9,3 +9,5 @@
 ## 4.2 Update Image URLs in the Database
 
 1. Replace existing image URLs in the database with the new public URLs from your storage bucket.
+
+→ [Next Up: Intro to App Platform](APP-PLATFORM.md)
