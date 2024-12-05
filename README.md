@@ -35,3 +35,13 @@ The lab guide is broken up into various markdown files that will guide you throu
 To start the lab, open the `SETUP.md` file and follow the instructions.
 
 We hope you enjoy the workshop!
+
+### Useful Links
+
+- [DigitalOcean Sign-Up](https://www.digitalocean.com/)
+- [Material UI Documentation](https://mui.com/)
+- [Node.js Download](https://nodejs.org/en/)
+- [GitHub CLI](https://cli.github.com/)
+- [MongoDB Compass](https://www.mongodb.com/products/compass)
+- [DigitalOcean Spaces](https://www.digitalocean.com/products/spaces/)
+- [DigitalOcean App Platform](https://www.digitalocean.com/products/app-platform/)
