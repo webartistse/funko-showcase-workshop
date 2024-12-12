@@ -8,15 +8,12 @@
 
 | **Time**                 | **Topics**                                                                     |
 | ------------------------ | ------------------------------------------------------------------------------ |
-| Setup - 0:30             |                                                                                |
+| Setup - 1:00             |                                                                                |
 |                          | 0:15 - Introductions, Explanations, Resources, Credit Codes                    |
 |                          | 0:05 - Setting Up Your DigitalOcean Account                                    |
 |                          | 0:10 - Make sure you have a GitHub account that you currently have acecess to. |
-| Database Creation - 0:30 |                                                                                |
-|                          | 0:20 - Get Database configured and running                                     |
-|                          | 0:10 - Data ingestion                                                          |
-| Storage Creation - 0:15  |                                                                                |
-|                          | 0:15 - Create Storage Bucket and upload images                                 |
+| Workshop time - 3:00     |                                                                                |
+
 
 ### Prerequisites
 
