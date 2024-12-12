@@ -73,9 +73,9 @@ export default function Home({
         <main>
           <Box display="grid" gridTemplateColumns="repeat(3, 1fr)" gap={4}>
             <FunkoCard funkos={funkos} setFunkos={setFunkos} />
-          </Box>
-        </main>
-      </Container>
+          </Box >
+        </main >
+      </Container >
       <footer>
         <a
           href="https://www.digitalocean.com/"
