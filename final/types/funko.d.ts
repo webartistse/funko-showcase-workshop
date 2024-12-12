@@ -2,8 +2,8 @@ import { ObjectId } from "mongodb";
 
 export type Funko = {
   _id: ObjectId;
-  show: string;
-  tvShow: string;
+  source: string;
+  source: string;
   character: string;
   numberInLine: number;
   imageUrl: string;
@@ -11,6 +11,7 @@ export type Funko = {
 };
 export interface FunkoProps {
   funkos: Funko[];
+  setFunkos: setFunkos;
 }
 export interface EditFunkoProps {
   funko: Funko

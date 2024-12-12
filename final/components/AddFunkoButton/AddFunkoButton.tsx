@@ -7,7 +7,7 @@ const AddFunkoButton = ({ setFunkos }: { setFunkos: React.Dispatch<React.SetStat
   const [open, setOpen] = useState(false);
   const [formValues, setFormValues] = useState({
     imageUrl: '',
-    show: '',
+    source: '',
     character: '',
     yearReleased: '',
     numberInLine: '',
@@ -23,8 +23,8 @@ const AddFunkoButton = ({ setFunkos }: { setFunkos: React.Dispatch<React.SetStat
 
   const handleSubmit = async () => {
     try {
-      const response = await axios.post('http://localhost:3000/api/funkos', formValues);
-      setFunkos( (funkos: Funko[]) => [...funkos, response.data]);
+      const response = await axios.post('http://localhost:3001/api/funkos', formValues);
+      setFunkos((funkos: Funko[]) => [...funkos, response.data]);
       handleClose(); // Close the dialog after submission
     } catch (error) {
       console.error('Error adding Funko:', error);
@@ -51,11 +51,11 @@ const AddFunkoButton = ({ setFunkos }: { setFunkos: React.Dispatch<React.SetStat
           />
           <TextField
             margin="dense"
-            name="tvShow"
-            label="TV/Movie Show"
+            name="source"
+            label="TV/Movie source"
             type="text"
             fullWidth
-            value={formValues.show}
+            value={formValues.source}
             onChange={handleInputChange}
           />
           <TextField

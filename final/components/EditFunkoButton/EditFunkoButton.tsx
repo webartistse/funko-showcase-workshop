@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import { Button, Dialog, DialogActions, DialogContent, DialogTitle, TextField } from '@mui/material';
-import { FunkoProps } from '../../types/funko';
+import { Funko, FunkoProps } from '../../types/funko';
 import { EditFunkoProps } from '../../types/funko';
+import axios from 'axios';
 
-const EditFunkoButton: React.FC<EditFunkoProps> = ({ funko }) => {
+const EditFunkoButton = ({ setFunkos, funko }: { setFunkos: React.Dispatch<React.SetStateAction<Funko[]>>, funko: Funko }) => {
   const [open, setOpen] = useState(false);
   const [formValues, setFormValues] = useState({
+    _id: funko._id,
     imageUrl: funko.imageUrl,
-    show: funko.tvShow,
+    source: funko.source,
     character: funko.character,
     yearReleased: funko.yearReleased,
     numberInLine: funko.numberInLine,
@@ -21,9 +23,21 @@ const EditFunkoButton: React.FC<EditFunkoProps> = ({ funko }) => {
     setFormValues({ ...formValues, [name]: value });
   };
 
-  const handleSubmit = () => {
-    console.log('Form submitted:', formValues);
-    handleClose(); // Close the dialog after submission
+  const handleSubmit = async () => {
+    try {
+      const response = await axios.post('http://localhost:3001/api/update_funkos', formValues);
+      setFunkos((funkos: Funko[]) => {
+        return funkos.map((funko) => {
+          if (funko._id === response.data._id) {
+            return response.data;
+          }
+          return funko;
+        })
+      });
+      handleClose(); // Close the dialog after submission
+    } catch (error) {
+      console.error('Error adding Funko:', error);
+    }
   };
 
   return (
@@ -46,11 +60,11 @@ const EditFunkoButton: React.FC<EditFunkoProps> = ({ funko }) => {
           />
           <TextField
             margin="dense"
-            name="tvShow"
-            label="TV/Movie Show"
+            name="source"
+            label="TV/Movie source"
             type="text"
             fullWidth
-            value={formValues.show}
+            value={formValues.source}
             onChange={handleInputChange}
           />
           <TextField

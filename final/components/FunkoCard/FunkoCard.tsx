@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import { FunkoProps } from "../../types/funko";
 import EditFunkoButton from "../EditFunkoButton/EditFunkoButton";
 
-const FunkoCard: React.FC<FunkoProps> = ({ funkos }) => {
+const FunkoCard: React.FC<FunkoProps> = ({ funkos, setFunkos }) => {
 
   return (
     <>
@@ -21,7 +21,7 @@ const FunkoCard: React.FC<FunkoProps> = ({ funkos }) => {
             />
             <CardContent>
               <Typography gutterBottom variant="h2" component="div" sx={{ fontSize: '2em', fontWeight: 'bold' }}>
-                {funko.tvShow}
+                {funko.source}
               </Typography>
               <Typography gutterBottom variant="h3" component="div" sx={{ fontSize: '1em' }}>
                 {funko.character}
@@ -33,7 +33,7 @@ const FunkoCard: React.FC<FunkoProps> = ({ funkos }) => {
                 Number in Line: {funko.numberInLine}
               </Typography>
             </CardContent>
-            <EditFunkoButton funko={funko} />
+            <EditFunkoButton funko={funko} setFunkos={setFunkos} />
           </Card>
         );
       })}

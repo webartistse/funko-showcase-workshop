@@ -13,7 +13,7 @@ import { SearchBar } from "../components/SearchBar/SearchBar";
 
 export const getServerSideProps: GetServerSideProps<IndexProps> = async () => {
   try {
-    await clientPromise;
+    // await clientPromise;
     // `await clientPromise` will use the default database passed in the MONGODB_URI
     // However you can use another database (e.g. myDatabase) by replacing the `await clientPromise` with the following code:
     //
@@ -50,7 +50,7 @@ export default function Home({
   useEffect(() => {
     const filterFunkos = (funko: Funko) => {
       return (
-        funko?.tvShow?.toLowerCase()?.includes(search.toLowerCase()) ||
+        funko?.source?.toLowerCase()?.includes(search.toLowerCase()) ||
         funko?.character?.toLowerCase()?.includes(search.toLowerCase())
       );
     };
@@ -72,7 +72,7 @@ export default function Home({
         <AddFunkoButton setFunkos={setFunkos} />
         <main>
           <Box display="grid" gridTemplateColumns="repeat(3, 1fr)" gap={4}>
-            <FunkoCard funkos={funkos} />
+            <FunkoCard funkos={funkos} setFunkos={setFunkos} />
           </Box>
         </main>
       </Container>

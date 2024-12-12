@@ -1,7 +1,7 @@
 import clientPromise from '../../lib/mongodb';
 import type { NextApiRequest, NextApiResponse } from 'next';
 import type { Funko } from '../../types/funko';
- 
+
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === 'POST') {
     const newFunko: Funko = req.body;
