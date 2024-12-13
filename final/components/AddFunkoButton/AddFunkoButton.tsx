@@ -23,7 +23,7 @@ const AddFunkoButton = ({ setFunkos }: { setFunkos: React.Dispatch<React.SetStat
 
   const handleSubmit = async () => {
     try {
-      const response = await axios.post('https://starfish-app-b35wi.ondigitalocean.app//api/funkos', formValues);
+      const response = await axios.post('/api/funkos', formValues);
       setFunkos((funkos: Funko[]) => [...funkos, response.data]);
       handleClose(); // Close the dialog after submission
     } catch (error) {
