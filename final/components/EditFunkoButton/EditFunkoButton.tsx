@@ -25,7 +25,7 @@ const EditFunkoButton = ({ setFunkos, funko }: { setFunkos: React.Dispatch<React
 
   const handleSubmit = async () => {
     try {
-      const response = await axios.post('http://localhost:3001/api/update_funkos', formValues);
+      const response = await axios.post('https://starfish-app-b35wi.ondigitalocean.app/api/update_funkos', formValues);
       setFunkos((funkos: Funko[]) => {
         return funkos.map((funko) => {
           if (funko._id === response.data._id) {
