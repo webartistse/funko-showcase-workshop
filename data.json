@@ -1,0 +1,84 @@
+{
+  "character": "Darth Vader",
+  "numberInLine": "1",
+  "imageUrl": "",
+  "yearReleased": 2010,
+  "source": "Star Wars"
+},
+{
+  "character": "Eleven with Eggo",
+  "imageUrl": "",
+  "numberInLine": "4",
+  "yearReleased": "2012",
+  "source": "Stranger Things"
+},
+{
+  "character": "Iron Man (Mark 50)",
+  "imageUrl": "",
+  "numberInLine": 285,
+  "yearReleased": 2018,
+  "source": "Marvel's Avengers"
+},
+{
+  "character": "Michael Scott",
+  "imageUrl": "",
+  "numberInLine": 869,
+  "yearReleased": "N/A",
+  "source": "The Office"
+},
+{
+  "character": "Harry Potter with Hedwig",
+  "imageUrl": "",
+  "numberInLine": 31,
+  "yearReleased": "N/A",
+  "source": "Harry Potter"
+},
+{
+  "character": "Jon Snow",
+  "imageUrl": "",
+  "numberInLine": 7,
+  "yearReleased": "N/A",
+  "source": "Game of Thrones"
+},
+{
+  "character": "Buzz Lightyear",
+  "imageUrl": "",
+  "numberInLine": 2,
+  "yearReleased": "2011",
+  "source": "Disney"
+},
+{
+  "character": "Zombie Red Skull",
+  "imageUrl": "",
+  "numberInLine": 668,
+  "yearReleased": "2020",
+  "source": "Marvel Zombies"
+},
+{
+  "character": "Floating Aang",
+  "imageUrl": "",
+  "numberInLine": 1439,
+  "yearReleased": "N/A",
+  "source": "Avatar: The Last Airbender"
+},
+{
+  "character": "Michael Myers",
+  "imageUrl": "https://funko-showcase.nyc3.digitaloceanspaces.com/michael-myers.png",
+  "numberInLine": 3,
+  "yearReleased": "2011",
+  "source": "Halloween"
+},
+{
+  "character": "Sponge Bob",
+  "imageUrl": "",
+  "numberInLine": 25,
+  "yearReleased": "2013",
+  "source": "Sponge Bob Square Pants"
+},
+{
+  "character": "Michelangelo",
+  "imageUrl": "",
+  "numberInLine": 1136,
+  "yearReleased": "2021",
+  "source": "Teenage Mutant Ninja Turtles"
+}
