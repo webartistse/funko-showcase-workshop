@@ -34,5 +34,6 @@ MONGODB_URI=your_connection_string_here
 2. Select the `data.json` from the root of the workshop directory.
 3. Click the "Import" button to add the data to the database.
 4. Restart the application and verify it connects to the database.
+5. Notice that the image is broken, this will be fixed when you move on to the next section!
 
 → [Next Up: Storage Creation](STORAGE.md)
