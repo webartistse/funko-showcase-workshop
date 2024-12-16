@@ -5,7 +5,6 @@
 1. Log into your DigitalOcean account.
 2. Use the Managed Databases feature to create a new database.
 - Follow the prompts to set up a MongoDB database.
-3. Alternatively, use the DigitalOcean web console to configure your database.
 
 ## 3.2 Connect the Database
 
@@ -16,12 +15,24 @@
 ```
 MONGODB_URI=your_connection_string_here
 ```
+## 3.3 Setup Compass
+
+1. Download and install [MongoDB Compass](https://www.mongodb.com/products/compass) if not already installed.
+2. Click on "Connections" and select "New Connection" in the left panel.
+3. Paste the connection string from the Cloud Console into the "Connection String" field.
+4. Give the connection a name and choose a color if you prefer, then click "Save & Connect".
+
+## 3.4 Setup Database in Compass
+
+1. Click on the "Create Database" button next to the name of the connection. It looks like this, ➕ (a plus symbol).
+2. Enter the name of the database you created in the Cloud Console to keep things organized.
+3. Give your database collection a name, such as 'funkos'.
 
 ## 3.3 Ingest Data
 
-1. Download the provided JSON file with sample data.
-2. Use [MongoDB Compass](https://www.mongodb.com/products/compass) to ingest the JSON file into your database.
-
-3. Restart the application and verify it connects to the database.
+1. Click on the "Import Data" button.
+2. Select the `data.json` from the root of the workshop directory.
+3. Click the "Import" button to add the data to the database.
+4. Restart the application and verify it connects to the database.
 
 → [Next Up: Storage Creation](STORAGE.md)
