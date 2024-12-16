@@ -9,7 +9,7 @@
 ## 1.2 Setting Up Your DigitalOcean Account
 
 - [Create a DigitalOcean account](https://www.digitalocean.com/)
-- Ensure you have a valid email and a security admin's personal phone number for emergencies.
+- Ensure you have a valid email.
 
 ## 1.3 Verify GitHub Access
 
