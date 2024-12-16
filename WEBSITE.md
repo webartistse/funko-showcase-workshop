@@ -2,54 +2,57 @@
 
 ## 2.1 Install Required Tools
 
-1. Install Material UI for styling components.
-2. Install Node.js for running JavaScript-based tools.
-3. Install GitHub tools:
-  - GitHub CLI
-  - GitHub Desktop (optional).
+1. Install [Node.js](https://nodejs.org/en) (npm is packaged with Node).
+2. Install GitHub tools:
 
-## 2.2 Clone the Workshop Repository
+   **You can use the terminal if you are comfortable with it.**
 
-1. Clone the website code from this public repository:
+  - [GitHub CLI](https://cli.github.com/) (optional)
+  - [GitHub Desktop](https://desktop.github.com/download/) (optional)
+
+## 2.2 Download the Workshop Repository
+
+1. Fork & clone the website code from this public repository:
 [Funko Showcase Workshop Repository](https://github.com/do-community/funko-showcase-workshop)
 
-## 2.3 Improve the Website
+## 2.3 Install Dependencies
 
-1. Open the project in your editor and make meaningful changes to improve it (e.g., update the UI or fix small bugs).
+1. Change directories into `/final`
 
-## 2.4 Install Dependencies
-
-1. Run the following command to install project dependencies:
+2. Run the following command to install project dependencies:
 ``` bash
-npm install
+npm i
 ```
 
-2. Test the project locally:
+3. Run the application:
 ```bash
-npm start
+npm run start
 ```
+- Open your browser and navigate to `localhost:3000` or whatever the open port is to see what the site looks like.
 
 - Notice that the application currently has no data.
 
-## 2.5 Connect the Database
+## 2.4 Improve the Website
 
-1. Create a `.env.local` file in the project directory.
+1. Change directories into `/start`
 
-2. Add the MongoDB connection string provided during the workshop:
-
+2. Install the dependencies:
+```bash
+npm i
 ```
-MONGODB_URI=your_connection_string_here
-```
 
-3. Restart the application and verify it connects to the database.
+3. Open the project in your editor, run `npm start` to see the bare site. Make meaningful changes to improve it (e.g., update the UI or fix small bugs) using MaterialUI to match the final site.
 
-## 2.6 Commit Changes to GitHub
+## 2.5 Commit Changes to GitHub
 
 1. Push your updated code to a GitHub repository you own:
 ```bash
 git add .
-git commit -m "Initial setup with database connection"
+git commit -m "Initial commit"
 git push origin main
 ```
+
+## 2.6 Refresh Site
+- Refresh `localhost` to see your changes.
 
 → [Next Up: Database Creation](DATABASE.md)
