@@ -26,7 +26,7 @@ MONGODB_URI=your_connection_string_here
 
 1. Click on the "Create Database" button next to the name of the connection. It looks like this, ➕ (a plus symbol).
 2. Enter the name of the database you created in the Cloud Console to keep things organized.
-3. Give your database collection a name, such as 'funkos'.
+3. Give your database collection a name, i.e. 'funkos'.
 
 ## 3.3 Ingest Data
 
@@ -34,6 +34,6 @@ MONGODB_URI=your_connection_string_here
 2. Select the `data.json` from the root of the workshop directory.
 3. Click the "Import" button to add the data to the database.
 4. Restart the application and verify it connects to the database.
-5. Notice that the image is broken, this will be fixed when you move on to the next section!
+5. Notice that the images are broken, this will be fixed when you move on to the next section!
 
 → [Next Up: Storage Creation](STORAGE.md)
