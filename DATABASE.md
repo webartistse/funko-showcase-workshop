@@ -2,7 +2,7 @@
 
 ## 3.1 Configure and Run a Database
 
-1. Log into your DigitalOcean account.
+1. Log into your [DigitalOcean account](https://cloud.digitalocean.com/login).
 2. Use the Managed Databases feature to create a new database.
 - Follow the prompts to set up a MongoDB database.
 
