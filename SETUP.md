@@ -8,6 +8,8 @@
 
 ## 1.2 Setting Up Your DigitalOcean Account
 
+![Sign up for DigitalOcean](https://funko-workshop.nyc3.digitaloceanspaces.com/setup/0.jpg)
+
 - [Create a DigitalOcean account](https://www.digitalocean.com/)
 - Ensure you have a valid email.
 

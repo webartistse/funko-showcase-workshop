@@ -12,6 +12,8 @@
 
 ## 2.2 Download the Workshop Repository
 
+![Fork the repo](https://funko-workshop.nyc3.digitaloceanspaces.com/website/web-0.jpg)
+
 1. Fork & clone the website code from this public repository:
 [Funko Showcase Workshop Repository](https://github.com/do-community/funko-showcase-workshop)
 

@@ -1,5 +1,7 @@
 # 4. Storage Creation
 
+![Storage Creation Walkthrough](https://funko-workshop.nyc3.digitaloceanspaces.com)
+
 ## 4.1 Set up Spaces Bucket
 
 1. Navigate to the **"Spaces Object Storage"** section in the DigitalOcean Cloud Console in the left sidebar.

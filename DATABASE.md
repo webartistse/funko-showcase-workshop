@@ -1,5 +1,7 @@
 # 3. Database Creation
 
+![Creating the database in the DigitalOcean Cloud Console](https://funko-workshop.nyc3.digitaloceanspaces.com/database/database-creation.mp4)
+
 ## 3.1 Configure and Run a Database
 
 1. Log into your [DigitalOcean account](https://cloud.digitalocean.com/login).
@@ -19,6 +21,7 @@ MONGODB_URI=your_connection_string_here
 
 1. Download and install [MongoDB Compass](https://www.mongodb.com/products/compass) if not already installed.
 2. Click on "Connections" and select "New Connection" in the left panel.
+![Set up New Connection in Compass](https://funko-workshop.nyc3.digitaloceanspaces.com/database/step-0.jpg)
 3. Paste the connection string from the Cloud Console into the "Connection String" field.
 4. Give the connection a name and choose a color if you prefer, then click "Save & Connect".
 
@@ -26,13 +29,17 @@ MONGODB_URI=your_connection_string_here
 
 1. Click on the "Create Database" button next to the name of the connection. It looks like this, ➕ (a plus symbol).
 2. Enter the name of the database you created in the Cloud Console to keep things organized.
+![Enter database name](https://funko-workshop.nyc3.digitaloceanspaces.com/database/step-1.jpg)
 3. Give your database collection a name, i.e. 'funkos'.
 
 ## 3.3 Ingest Data
 
 1. Click on the "Import Data" button.
+![Import data into database](https://funko-workshop.nyc3.digitaloceanspaces.com/database/step-2.jpg)
 2. Select the `data.json` from the root of the workshop directory.
+![Select the data file](https://funko-workshop.nyc3.digitaloceanspaces.com/database/step-3.jpg)
 3. Click the "Import" button to add the data to the database.
+![Click the import button to add data to the database](https://funko-workshop.nyc3.digitaloceanspaces.com/database/step-4.jpg)
 4. Restart the application and verify it connects to the database.
 5. Notice that the images are broken, this will be fixed when you move on to the next section!
 
