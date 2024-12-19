@@ -1,6 +1,6 @@
 # 3. Database Creation
 
-![Creating the database in the DigitalOcean Cloud Console](https://funko-workshop.nyc3.digitaloceanspaces.com/database/database-creation.mp4)
+https://github.com/user-attachments/assets/ec6ae7d7-525f-44ac-8beb-1b0656739173
 
 ## 3.1 Configure and Run a Database
 
