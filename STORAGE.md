@@ -1,6 +1,6 @@
 # 4. Storage Creation
 
-![Storage Creation Walkthrough](https://funko-workshop.nyc3.digitaloceanspaces.com)
+https://github.com/user-attachments/assets/37c57277-7bec-4359-b56f-1b07e5699954
 
 ## 4.1 Set up Spaces Bucket
 
