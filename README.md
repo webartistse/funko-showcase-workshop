@@ -15,6 +15,7 @@ Chris DeMars - [Twitter](https://x.com/saltnburnem) | [Blueskey](https://bsky.ap
 |                          | 0:15 - Introductions, Explanations, Resources, Credit Codes                    |
 |                          | 0:05 - Setting Up Your DigitalOcean Account                                    |
 |                          | 0:10 - Make sure you have a GitHub account that you currently have acecess to. |
+|                          | 0:30 - Presentation                                                            |
 | Workshop time - 3:00     |                                                                                |
 
 
