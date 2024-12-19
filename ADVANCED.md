@@ -6,7 +6,7 @@
 
 ## 7.2 Autoscaling and Testing
 
-![Autoscaling enabled](https://funko-workshop.nyc3.digitaloceanspaces.com/autoscaling/autoscaling-setup.mp4)
+https://github.com/user-attachments/assets/a8813707-cc57-4dc1-9675-380e19c3f28a
 
 1. Go back into the App Platform and choose the App, then select **Settings*, than the App Component.
 2. Scroll down to the **Resource Size** and click edit.
