@@ -1,6 +1,6 @@
 # 5. Introduction to App Platform
 
-![Setting up App Platform](https://funko-workshop.nyc3.digitaloceanspaces.com/app-platform/app-platform.mp4)
+https://github.com/user-attachments/assets/8c0de1da-c15b-4762-a0f1-b933f8adc11e
 
 ## 5.1 Getting Started with DigitalOcean App Platform
 
