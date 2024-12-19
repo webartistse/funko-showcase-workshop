@@ -2,7 +2,10 @@
 
 ## Funko Showcase Workshop
 
-### Presenters: Jeff Blankenburg & Chris DeMars
+### Presenters
+Jeff Blankenburg - [Twitter](https://x.com/jeffblankenburg) | [Bluesky](https://bsky.app/profile/jeffblankenburg.com)
+
+Chris DeMars - [Twitter](https://x.com/saltnburnem) | [Blueskey](https://bsky.app/profile/chrisdemars.net)
 
 ### Schedule
 
