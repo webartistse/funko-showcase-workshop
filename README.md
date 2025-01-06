@@ -18,6 +18,13 @@ Chris DeMars - [Twitter](https://x.com/saltnburnem) | [Blueskey](https://bsky.ap
 |                          | 0:30 - Presentation                                                            |
 | Workshop time - 3:00     |                                                                                |
 
+### What are we building?
+
+The app we are building is to showcase/inventory any type of collection or memorabillia you own. For this workshop we are going to focus around Funko Pop's. We all love those right? The app will display a card component using MaterialUI that has a picture, the medium, character name, year released, and number in line.
+
+You will also have the abilitiy to add a funko or edit one.
+
+There is also search funtionality that you will be build in order to quickly find the item you are looking for.
 
 ### Prerequisites
 
