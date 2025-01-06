@@ -15,7 +15,7 @@ https://github.com/user-attachments/assets/8c0de1da-c15b-4762-a0f1-b933f8adc11e
 5. The branch that is selected should be main and the source directory can stay the default. Leave **Autodeploy** checked. This will redeploy your site every time you push main to GitHub.
 6. Add a resource, you will choose **Database** and click **Add**.
 
-## 5.3 Configrue your Database
+## 5.3 Configure your Database
 
 1. Select **Attach existing DigitalOcean database**.
 2. Choose your cluster and click **Next**.
