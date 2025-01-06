@@ -27,7 +27,7 @@ Chris DeMars - [Twitter](https://x.com/saltnburnem) | [Blueskey](https://bsky.ap
 - Install [git](git-scm.com/) if not already installed
 - Download and install [Compass](www.mongodb.com/docs/compass/current/install/)
 - Install [VS Code](code.visualstudio.com/)
-- Install the DOTENV extension in VS Code
+- Install the [DOTENV extension](https://marketplace.visualstudio.com/items?itemName=dotenv.dotenv-vscode) in VS Code
 
 ### Workshop Lab Guide
 
