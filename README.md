@@ -23,7 +23,7 @@ Chris DeMars - [Twitter](https://x.com/saltnburnem) | [Blueskey](https://bsky.ap
 
 - Set Up Your DigitalOcean Account
 - Set Up Your GitHub Account
-- Download and Install [Node LTS (comes with npm)](nodejs.org/en)
+- Download and Install [Node LTS (comes with npm)](https://nodejs.org/en)
 - Install [git](git-scm.com/) if not already installed
 - Download and install [Compass](www.mongodb.com/docs/compass/current/install/)
 - Install [VS Code](code.visualstudio.com/)
