@@ -26,6 +26,14 @@ You will also have the abilitiy to add a funko or edit one.
 
 There is also search funtionality that you will be build in order to quickly find the item you are looking for.
 
+### What are we going to learn?
+
+- How to build a card component app using MaterialUI
+- Setting up a Managed Mongo Database in DigitalOcean
+- Taking a dataset and ingesting that in Compass
+- Deploying the site and database to the cloud using DigitalOcean
+- Enabling Autoscaling to handle traffic influx
+
 ### Prerequisites
 
 - Set Up Your DigitalOcean Account
