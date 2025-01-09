@@ -36,12 +36,12 @@ There is also search funtionality that you will be build in order to quickly fin
 
 ### Prerequisites
 
-- Set Up Your DigitalOcean Account
-- Set Up Your GitHub Account
+- Set Up Your [DigitalOcean Account](https://cloud.digitalocean.com/registrations/new)
+- Set Up Your [GitHub Account](https://github.com/)
 - Download and Install [Node LTS (comes with npm)](https://nodejs.org/en)
-- Install [git](git-scm.com/) if not already installed
-- Download and install [Compass](www.mongodb.com/docs/compass/current/install/)
-- Install [VS Code](code.visualstudio.com/)
+- Install [git](https://git-scm.com/) if not already installed
+- Download and install [Compass](https://www.mongodb.com/try/download/compass)
+- Install [VS Code](https://code.visualstudio.com/)
 - Install the [DOTENV extension](https://marketplace.visualstudio.com/items?itemName=dotenv.dotenv-vscode) in VS Code
 
 ### Workshop Lab Guide
