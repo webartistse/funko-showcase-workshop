@@ -24,16 +24,15 @@ export const SearchBar = ({
     >
       <TextField
         onChange={(e) => setSearch(e.target.value)}
-        id="outlined-basic"
-        label="Search for UFO Sightings"
-        variant="outlined"
-        aria-label="Search for UFO Sightings"
+        id="filled-basic"
+        label="Search for your Funko!"
+        variant="filled"
+        aria-label="Search for your Funko!"
+        sx={{ backgroundColor: 'white' }}
       />
 
-      <Typography variant="body2" color="text.secondary">
-        *This is a list of some sample data of UFO/UAPUSO abductions and
-        sightings in the United States. Search for an encounter by name or
-        location.
+      <Typography variant="body2" color="text.primary">
+        *Use this search to filter down your collection of Funko's!. To add a Funko, click the button below!
       </Typography>
     </Box>
   );

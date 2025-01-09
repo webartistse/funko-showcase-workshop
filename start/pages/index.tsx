@@ -4,15 +4,16 @@ import type { InferGetServerSidePropsType, GetServerSideProps } from "next";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import Header from "../components/Header/Header";
-import EncounterCard from "../components/EncounterCard/EncounterCard";
-import { useState } from "react";
+import FunkoCard from "../components/FunkoCard/FunkoCard";
+import { useEffect, useState } from "react";
 import { IndexProps } from "../types";
-import { Encounter } from "../types/encounter";
+import { Funko } from "../types/funko";
+import AddFunkoButton from "../components/AddFunkoButton/AddFunkoButton";
 import { SearchBar } from "../components/SearchBar/SearchBar";
 
 export const getServerSideProps: GetServerSideProps<IndexProps> = async () => {
   try {
-    await clientPromise;
+    // await clientPromise;
     // `await clientPromise` will use the default database passed in the MONGODB_URI
     // However you can use another database (e.g. myDatabase) by replacing the `await clientPromise` with the following code:
     //
@@ -22,60 +23,59 @@ export const getServerSideProps: GetServerSideProps<IndexProps> = async () => {
     // Then you can execute queries against your database like so:
     // db.find({}) or any of the MongoDB Node Driver commands
     const client = await clientPromise;
-    const db = client.db("close-encounters");
-    const encounters = await db
-      .collection("encounters")
-      .find({})
-      .limit(30)
-      .toArray();
+    const db = client.db("funko-showcase");
+    const funkos = await db.collection("funkos").find({}).limit(30).toArray();
 
     return {
       props: {
         isConnected: true,
-        encounters: JSON.parse(JSON.stringify(encounters)),
+        funkosFetch: JSON.parse(JSON.stringify(funkos)),
       },
     };
   } catch (e) {
     console.error(e);
     return {
-      props: { isConnected: false, encounters: [] },
+      props: { isConnected: false, funkosFetch: [] },
     };
   }
 };
 
 export default function Home({
-  encounters,
+  isConnected,
+  funkosFetch,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
   const [search, setSearch] = useState("");
+  const [funkos, setFunkos] = useState(funkosFetch);
 
-  const filterEncounters = (encounter: Encounter) => {
-    return (
-      encounter.name.toLowerCase().includes(search.toLowerCase()) ||
-      encounter.location.toLowerCase().includes(search.toLowerCase())
-    );
-  };
+  useEffect(() => {
+    const filterFunkos = (funko: Funko) => {
+      return (
+        funko?.source?.toLowerCase()?.includes(search.toLowerCase()) ||
+        funko?.character?.toLowerCase()?.includes(search.toLowerCase())
+      );
+    };
 
-  const filteredEncounters = encounters.filter(filterEncounters);
+    const filteredFunkos = funkos.filter(filterFunkos);
+    setFunkos(filteredFunkos);
+  }, [search]);
 
   return (
     <>
       <Head>
-        <title>UFO Encounters and Sightings</title>
-        <meta
-          name="description"
-          content="A collection of UFO, UAP, and USO sightings and encounters."
-        />
+        <title>Funko Showcase</title>
+        <meta name="description" content="Funko Showcase." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
       <Container maxWidth="lg">
         <SearchBar setSearch={setSearch} />
+        <AddFunkoButton setFunkos={setFunkos} />
         <main>
           <Box display="grid" gridTemplateColumns="repeat(3, 1fr)" gap={4}>
-            <EncounterCard encounters={filteredEncounters} />
-          </Box>
-        </main>
-      </Container>
+            <FunkoCard funkos={funkos} setFunkos={setFunkos} />
+          </Box >
+        </main >
+      </Container >
       <footer>
         <a
           href="https://www.digitalocean.com/"
@@ -92,9 +92,6 @@ export default function Home({
       </footer>
 
       <style jsx>{`
-        .body {
-          background-image: url("https://archivesfoundation.org/wp-content/uploads/2019/12/ufo-7-e1575496085887-1024x518.jpg");
-        }
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
