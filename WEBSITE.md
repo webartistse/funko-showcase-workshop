@@ -1,6 +1,6 @@
-# 2. Website Creation
+# 4. Website Creation
 
-## 2.1 Install Required Tools
+## 4.1 Install Required Tools
 
 1. Install [Node.js](https://nodejs.org/en) (npm is packaged with Node).
 2. Install GitHub tools:
@@ -10,14 +10,14 @@
   - [GitHub CLI](https://cli.github.com/) (optional)
   - [GitHub Desktop](https://desktop.github.com/download/) (optional)
 
-## 2.2 Download the Workshop Repository
+## 4.2 Download the Workshop Repository
 
 ![Fork the repo](https://funko-workshop.nyc3.digitaloceanspaces.com/website/web-0.jpg)
 
 1. Fork & clone the website code from this public repository:
 [Funko Showcase Workshop Repository](https://github.com/do-community/funko-showcase-workshop)
 
-## 2.3 Install Dependencies
+## 4.3 Install Dependencies
 
 1. Change directories into `/final`
 
@@ -34,7 +34,7 @@ npm run start
 
 - Notice that the application currently has no data.
 
-## 2.4 Improve the Website
+## 4.4 Improve the Website
 
 1. Change directories into `/start`
 
@@ -45,7 +45,7 @@ npm i
 
 3. Open the project in your editor, run `npm start` to see the bare site. Make meaningful changes to improve it (e.g., update the UI or fix small bugs) using MaterialUI to match the final site.
 
-## 2.5 Commit Changes to GitHub
+## 4.5 Commit Changes to GitHub
 
 1. Push your updated code to a GitHub repository you own:
 ```bash
@@ -54,7 +54,7 @@ git commit -m "Initial commit"
 git push origin main
 ```
 
-## 2.6 Refresh Site
+## 4.6 Refresh Site
 - Refresh `localhost` to see your changes.
 
-→ [Next Up: Database Creation](DATABASE.md)
+→ [Next Up: App Platform](APP-PLATFORM.md)

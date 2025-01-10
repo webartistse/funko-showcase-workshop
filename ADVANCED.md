@@ -1,10 +1,10 @@
-# 7. Advanced Features
+# 6. Advanced Features
 
-## 7.1 Create the Ability to Add/Edit
+## 6.1 Create the Ability to Add/Edit
 
 - Update the application to allow users to add or edit data.
 
-## 7.2 Autoscaling and Testing
+## 6.2 Autoscaling and Testing
 
 https://github.com/user-attachments/assets/a8813707-cc57-4dc1-9675-380e19c3f28a
 
@@ -14,7 +14,7 @@ https://github.com/user-attachments/assets/a8813707-cc57-4dc1-9675-380e19c3f28a
 4. Check the box to turn on autoscale; **Set containers to autoscale**.
 5. Set your minimum and maximum number of containers as well as your CPU % threshold. You can leave these as defaults.
 
-## 7.3 Test Autoscaling
+## 6.3 Test Autoscaling
 
 1. Open your terminal
 2. If you haven't installed [hey](https://github.com/rakyll/hey) yet, install that with `brew install hey`.

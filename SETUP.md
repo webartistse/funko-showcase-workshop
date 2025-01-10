@@ -17,4 +17,4 @@
 
 - Make sure you have access to a [GitHub account](https://github.com/) for storing and deploying your application.
 
-→ [Next Up: Website Creation](WEBSITE.md) 
+→ [Next Up: Database Creation](DATABASE.md) 
