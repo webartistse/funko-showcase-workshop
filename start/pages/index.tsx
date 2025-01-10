@@ -62,7 +62,7 @@ export default function Home({
   return (
     <>
       <Head>
-        <title>Funko Showcase</title>
+        <title></title>
         <meta name="description" content="Funko Showcase." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
