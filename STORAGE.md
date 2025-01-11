@@ -15,7 +15,7 @@ https://github.com/user-attachments/assets/37c57277-7bec-4359-b56f-1b07e5699954
 
 1. Find the images folder in the root of your working directory. (You can also find them here [images](/images)).
 2. Upload the images to the bucket.
-![Upload your images](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/3-Storage/upload.png)
+- ![Upload your images](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/3-Storage/upload.png)
 4. Make sure to set their permissions to "Public."
  - ![Set your permissions to public.](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/3-Storage/makepublic.png)
 
