@@ -13,7 +13,7 @@ https://github.com/user-attachments/assets/37c57277-7bec-4359-b56f-1b07e5699954
 
 ## 3.2 Upload Images to DigitalOcean Spaces
 
-1. Find the images folder in the root of your working directory. (You can also find them here [images](/images)).
+1. Download the 12 images from this repository: [images](/images)).
 2. Upload the images to the bucket.
 - ![Upload your images](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/3-Storage/upload.png)
 3. Make sure to set their permissions to "Public."
