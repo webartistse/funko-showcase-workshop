@@ -40,7 +40,8 @@ MONGODB_URI=your_connection_string_here
 ![Select the data file](https://funko-workshop.nyc3.digitaloceanspaces.com/database/step-3.jpg)
 3. Click the "Import" button to add the data to the database.
 ![Click the import button to add data to the database](https://funko-workshop.nyc3.digitaloceanspaces.com/database/step-4.jpg)
-4. Restart the application and verify it connects to the database.
-5. Notice that the images are broken, this will be fixed when you move on to the next section!
+4. Congratulations!  You've created your database!
+
+As you looked at the data we imported, you should have noticed an "imageUrl" field for each one.  We will need to create some storage to hold these images, and then we will need to update our data to point to those images.
 
 → [Next Up: Storage Creation](STORAGE.md)
