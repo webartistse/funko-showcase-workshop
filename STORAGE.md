@@ -16,11 +16,14 @@ https://github.com/user-attachments/assets/37c57277-7bec-4359-b56f-1b07e5699954
 1. Find the images folder in the root of your working directory. (You can also find them here [images](/images)).
 2. Upload the images to the bucket.
 - ![Upload your images](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/3-Storage/upload.png)
-4. Make sure to set their permissions to "Public."
+3. Make sure to set their permissions to "Public."
  - ![Set your permissions to public.](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/3-Storage/makepublic.png)
 
 ## 3.3 Update Image URLs in the Database
 
-1. Replace existing image URLs in the database with the new public URLs from your storage bucket.
+1. In Compass, you can now update the "imageUul" property of each data object with the "Origin Endpoint" for each image.
+- ![Copy the origin endpoint from an image in your storage.](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/3-Storage/originendpoint.png)
+2. Update the data in the appropriate data object with the new URL for each image.
+- ![Update the imageUrl property for each image.](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/3-Storage/updateobjectURL.png)
 
 → [Next Up: Intro to Website Creation](WEBSITE.md)
