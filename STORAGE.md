@@ -21,7 +21,7 @@ https://github.com/user-attachments/assets/37c57277-7bec-4359-b56f-1b07e5699954
 
 ## 3.3 Update Image URLs in the Database
 
-1. In Compass, you can now update the "imageUul" property of each data object with the "Origin Endpoint" for each image.
+1. In Compass, you can now update the "imageUrl" property of each data object with the "Origin Endpoint" for each image.
 - ![Copy the origin endpoint from an image in your storage.](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/3-Storage/originendpoint.png)
 2. Update the data in the appropriate data object with the new URL for each image.
 - ![Update the imageUrl property for each image.](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/3-Storage/updateobjectURL.png)
