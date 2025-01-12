@@ -17,25 +17,46 @@
 1. Fork & clone the website code from this public repository:
 [Funko Showcase Workshop Repository](https://github.com/do-community/funko-showcase-workshop)
 
+## 4.3 Add Your Connection String & Database Information
+1. In the root folder of your project, create a new file named `.env`.
+2. Open this file, and copy & paste this text into the file:
+```bash
+MONGODB_URI=
+DATABASE_NAME=
+COLLECTION_NAME=
+```
+3. MONGODB_URI should be your full connection string that we created in step 2.2, including your password. Add this after the "=".
+4. DATABASE_NAME should be the name of your database.  We recommended using "funko-database". Add this after the "=".
+5. COLLECTION_NAME should be the name of your collection. We recommended using "funko-collection". Add this after the "=".
+6. Save your file.
+
 ## 4.3 Install Dependencies
 
-1. Change directories into `/final`
-
-2. Run the following command to install project dependencies:
+1. In a terminal, open your new code folder.
+2. Change your working directory to `/start`
+```bash
+cd start
+```
+3. Run the following command to install project dependencies:
 ``` bash
-npm i
+npm install
 ```
 
-3. Run the application:
+## 4.4 Build Your Website Code
+1. Build the application by running the following command in the same `/start` directory.
+```bash
+npm run build
+```
+2. Run the application:
 ```bash
 npm run start
 ```
-- Open your browser and navigate to `localhost:3000` or whatever the open port is to see what the site looks like.
+- Open your browser and navigate to `http://localhost:3000` or whatever the open port is to see what the site looks like.
 
 - Notice that the application currently has no data.
 
 ## 4.4 Improve the Website
-
+# ***TODO: WHAT ARE WE GOING TO HAVE THE USERS DO HERE?***
 1. Change directories into `/start`
 
 2. Install the dependencies:

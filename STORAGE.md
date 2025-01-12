@@ -5,11 +5,12 @@ https://github.com/user-attachments/assets/37c57277-7bec-4359-b56f-1b07e5699954
 ## 3.1 Set up Spaces Bucket
 
 1. Navigate to the **"Spaces Object Storage"** section in the DigitalOcean Cloud Console in the left sidebar.
+- ![Choose Manage > Spaces Object Storage.](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/3-Storage/managestorage.png)
 2. Click on the **"Create a Spaces Bucket"** button.
-3. Choose a datacenter region for your bucket. NY is the default.
-4. Give your bucket a unique name.
-5. Select a project to add your bucket to.
-6. Click on the **"Create Spaces Bucket"** button.
+- ![Click Create a Spaces Bucket](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/3-Storage/createaspacesbucket.png)
+3. Give your bucket a unique name.
+- ![Give your bucket a unique name.](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/3-Storage/createbucket.png)
+4. Click on the **"Create Spaces Bucket"** button.
 
 ## 3.2 Upload Images to DigitalOcean Spaces
 
@@ -24,5 +25,6 @@ https://github.com/user-attachments/assets/37c57277-7bec-4359-b56f-1b07e5699954
 1. Copy the "Origin Endpoint" for each image, and add it to the "imageUrl" property of each data object in Compass. Make sure to click "Update" to commit your change.
 - ![Copy the origin endpoint from an image in your storage.](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/3-Storage/originendpoint.png)
 - ![Update the imageUrl property for each image.](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/3-Storage/updateobjectURL.png)
+2. ***Your database and image storage journey is complete!***
 
 → [Next Up: Intro to Website Creation](WEBSITE.md)
