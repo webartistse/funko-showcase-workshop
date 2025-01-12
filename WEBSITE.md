@@ -11,15 +11,15 @@
   - [GitHub Desktop](https://desktop.github.com/download/) (optional)
 
 ## 4.2 Download the Workshop Repository
-
-![Fork the repo](https://funko-workshop.nyc3.digitaloceanspaces.com/website/web-0.jpg)
-
-1. Fork & clone the website code from this public repository:
+1. Fork this repository.
 [Funko Showcase Workshop Repository](https://github.com/do-community/funko-showcase-workshop)
+![Fork the repo](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/4-Website/forkrepo.png)
+2. Clone your new repository to your local machine.
+![Clone the repo](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/4-Website/clonerepo.png)
 
 ## 4.3 Add Your Connection String & Database Information
 1. In the root folder of your project, create a new file named `.env`.
-2. Open this file, and copy & paste this text into the file:
+2. Open this file, and copy & paste this text into the file, and add your specific details.
 ```bash
 MONGODB_URI=
 DATABASE_NAME=
@@ -29,6 +29,10 @@ COLLECTION_NAME=
 4. DATABASE_NAME should be the name of your database.  We recommended using "funko-database". Add this after the "=".
 5. COLLECTION_NAME should be the name of your collection. We recommended using "funko-collection". Add this after the "=".
 6. Save your file.
+7. In the same directory, create another new file called `.gitignore`.
+8. Open this file, and add "`.env`" on the first line of this file.
+9. Save your file.
+10. This will prevent us from accidentally uploading our connection string data to our GitHub repository.
 
 ## 4.3 Install Dependencies
 
