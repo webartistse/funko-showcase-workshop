@@ -20,7 +20,7 @@ https://github.com/user-attachments/assets/8c0de1da-c15b-4762-a0f1-b933f8adc11e
 
 ## 5.3 Set Environment Variables
 1. Click the "Edit" button next to Global.
-    ![Clock the Global Edit button.](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/5-AppPlatform/envvars.png)
+    ![Click the Global Edit button.](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/5-AppPlatform/envvars.png)
 2. Click the "Bulk Editor" button.
 
     ![Click the bulk editor button.](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/5-AppPlatform/bulkeditorbutton.png)
