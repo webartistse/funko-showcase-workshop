@@ -20,7 +20,7 @@ https://github.com/user-attachments/assets/37c57277-7bec-4359-b56f-1b07e5699954
 
 ## 3.2 Upload Images to DigitalOcean Spaces
 
-1. Download the 12 images from this repository: [images](/images/images.zip).
+1. Download the 12 images from this repository: [images](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/3-Storage/images.zip).
 2. Upload the images to the bucket.
 
     ![Upload your images](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/3-Storage/upload.png)
@@ -36,7 +36,7 @@ https://github.com/user-attachments/assets/37c57277-7bec-4359-b56f-1b07e5699954
     ![Copy the origin endpoint from an image in your storage.](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/3-Storage/originendpoint.png)
 
     ![Update the imageUrl property for each image.](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/3-Storage/updateobjectURL.png)
-    
+
 2. ***Your database and image storage journey is complete!***
 
 → [Next Up: Intro to Website Creation](WEBSITE.md)
