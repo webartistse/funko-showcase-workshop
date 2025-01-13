@@ -65,7 +65,7 @@
 > **NOTE:** We're going to make a small custom change to our app here, but we will be making future modifications after the app is successfully deployed.
 
 1. In your `/start` directory, open the file `/components/Header/Header.tsx`.
-2. You will see an code block that defines our page's header.
+2. You will see a code block that defines our page's header.
     ```html
     <Box sx={{ flexGrow: 1 }}>
       <BackgroundAppBar position="static" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -85,6 +85,7 @@
       npm run start
     ```
 6. Refresh your browser to see your changes.
+7. Now would also be a fun time to add another element to your database.  You can click the `Add Funko` button to add another entry to your database.
 
 ## 4.6 Commit Changes to GitHub
 
