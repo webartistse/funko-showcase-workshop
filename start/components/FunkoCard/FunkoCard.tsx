@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import { FunkoProps } from "../../types/funko";
 import EditFunkoButton from "../EditFunkoButton/EditFunkoButton";
 
+
 const FunkoCard: React.FC<FunkoProps> = ({ funkos, setFunkos }) => {
 
   return (

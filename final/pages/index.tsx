@@ -23,8 +23,12 @@ export const getServerSideProps: GetServerSideProps<IndexProps> = async () => {
     // Then you can execute queries against your database like so:
     // db.find({}) or any of the MongoDB Node Driver commands
     const client = await clientPromise;
-    const db = client.db("funko-showcase");
-    const funkos = await db.collection("funkos").find({}).limit(30).toArray();
+    const db = client.db(process.env.DATABASE_NAME);
+    const collectionName = process.env.COLLECTION_NAME;
+    if (!collectionName) {
+      throw new Error("COLLECTION_NAME is not defined in the environment variables");
+    }
+    const funkos = await db.collection(collectionName).find({}).limit(30).toArray();
 
     return {
       props: {
