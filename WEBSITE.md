@@ -3,7 +3,7 @@
 ## 4.1 Install Required Tools
 
 1. Install [Node.js](https://nodejs.org/en) (npm is packaged with Node).
-2. Install GitHub tools:
+2. [Optional] Install GitHub tools:
 
    **You can use the terminal if you are comfortable with it.**
 
@@ -16,7 +16,7 @@
 
   ![Fork the repo](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/4-Website/forkrepo.png)
 
-2. Clone your new repository to your local machine.
+2. Clone your new repository to your local machine using the web URL or use GitHub Desktop.
   
   ![Clone the repo](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/4-Website/clonerepo.png)
 
@@ -29,8 +29,8 @@
     COLLECTION_NAME=
     ```
 3. MONGODB_URI should be your full connection string that we created in step 2.2, including your password. Add this after the "=".
-4. DATABASE_NAME should be the name of your database.  We recommended using "funko-database". Add this after the "=".
-5. COLLECTION_NAME should be the name of your collection. We recommended using "funko-collection". Add this after the "=".
+4. DATABASE_NAME should be the name of your database.  We recommended using ```funko-database```. Add this after the "=".
+5. COLLECTION_NAME should be the name of your collection. We recommended using ```funko-collection```. Add this after the "=".
 6. Save your file.
 
 ## 4.3 Install Dependencies
