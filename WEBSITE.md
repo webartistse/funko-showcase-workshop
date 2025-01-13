@@ -46,7 +46,7 @@
     npm install
     ```
 
-## 4.4 Build Your Website Code
+## 4.4 Run Your Website Locally
 1. Build the application by running the following command in the same `/start` directory.
     ```bash
     npm run build
@@ -57,25 +57,42 @@
     ```
 3. Open your browser and navigate to `http://localhost:3000` or whatever the open port is to see what the site looks like.
 
-4. Notice that the application currently shows none of our data.  The next step is to fix that.
+    > **NOTE:** Notice that the application currently only shows the images for each item in our collection.  After we deploy our app, we will do more work on the UI of our application to show the rest of the metadata.
 
-## 4.4 Improve the Website
-# ***TODO: WHAT ARE WE GOING TO HAVE THE USERS DO HERE?***
-1. Update the Header file to show their name.
-2. Update the FunkoCard to show additional properties.
+4. When you're done viewing the app, make sure to hit Ctrl+C in your terminal to end the process.
 
-3. Open the project in your editor, run `npm start` to see the bare site. Make meaningful changes to improve it (e.g., update the UI or fix small bugs) using MaterialUI to match the final site.
+## 4.5 Improve the Website
+> **NOTE:** We're going to make a small custom change to our app here, but we will be making future modifications after the app is successfully deployed.
 
-## 4.5 Commit Changes to GitHub
+1. In your `/start` directory, open the file `/components/Header/Header.tsx`.
+2. You will see an code block that defines our page's header.
+    ```html
+    <Box sx={{ flexGrow: 1 }}>
+      <BackgroundAppBar position="static" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <Toolbar variant="dense">
+          <Typography variant="h1" component="div" sx={{ flexGrow: 1, color: 'white', fontFamily: 'Henny Penny' }}>
+            Funko Showcase
+          </Typography>
+        </Toolbar>
+      </BackgroundAppBar>
+    </Box>
+    ```
+3. Change the `Funko Showcase` text to something custom to you, like `Jeff's Funko Collection`.
+4. Save the file.
+5. Build and run your application again to see the changes in your browser.
+    ```bash
+      npm run build
+      npm run start
+    ```
+6. Refresh your browser to see your changes.
 
-1. Push your updated code to a GitHub repository you own:
-```bash
-git add .
-git commit -m "Initial commit"
-git push origin main
-```
+## 4.6 Commit Changes to GitHub
 
-## 4.6 Refresh Site
-- Refresh `localhost` to see your changes.
+1. Push your updated code up to GitHub (you can also do this in GitHub Desktop):
+    ```bash
+    git add .
+    git commit -m "Initial commit"
+    git push origin main
+    ```
 
 → [Next Up: App Platform](APP-PLATFORM.md)
