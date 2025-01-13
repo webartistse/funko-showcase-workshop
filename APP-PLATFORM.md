@@ -19,7 +19,8 @@ https://github.com/user-attachments/assets/8c0de1da-c15b-4762-a0f1-b933f8adc11e
 6. Click "Next".
 
 ## 5.3 Set Environment Variables
-1. Click the "Edit" button next to your app name (you can use Global, but that would apply to all future apps you build as well.)
+1. Click the "Edit" button next to Global.
+    ![Clock the Global Edit button.](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/5-AppPlatform/envvars.png)
 2. Click the "Bulk Editor" button.
 
     ![Click the bulk editor button.](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/5-AppPlatform/bulkeditorbutton.png)
@@ -30,10 +31,19 @@ https://github.com/user-attachments/assets/8c0de1da-c15b-4762-a0f1-b933f8adc11e
 
 4. Click "Save".
 
-# TODO: FINISH THIS PAGE.
-1. Finish setting everything up.
-2. Watch the build and deploy logs.  They're interesting!
-3. There's a bug.  It will say you have no environment variables.  You do.  You can update if you'd like.
+    > **NOTE:** It is a best practice to encrypt your environment variables.  If your application is logging them, it will write their plain text to the logs if they are not encrypted.
+
+5. Click "Next".
+6. The `Info` screen shows your your app and region information. No changes needed here.  Click "Next".
+7. Review your choices before deploying your new app.  No changes should be necessary.
+
+    ![Review your choices.](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/5-AppPlatform/appplatreview.png)
+
+8. Click "Create Resources".
+
+## Fun Things To Do While You Wait
+1. Click the `Go To Build Logs" button.  You can watch live as the server is configured and your app is deployed.
+2. Once the Build is completed, you can also watch the Deploy Logs to watch the app spin up.
 
 ## 5.5 Access Your Running Application
 
