@@ -21,17 +21,18 @@
   ![Clone the repo](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/4-Website/clonerepo.png)
 
 ## 4.3 Add Your Connection String & Database Information
-1. In the root folder of your project, create a new file named `.env`.
-2. Open this file, and copy & paste this text into the file, and add your specific details.
+1. In the root folder of your project, find a file named `.envsample`.
+2. Rename this file to `.env`.
+3. Open this file, and copy & paste this text into the file, and add your specific details.
     ```bash
     MONGODB_URI=
     DATABASE_NAME=
     COLLECTION_NAME=
     ```
-3. MONGODB_URI should be your full connection string that we created in step 2.2, including your password. Add this after the "=".
-4. DATABASE_NAME should be the name of your database.  We recommended using ```funko-database```. Add this after the "=".
-5. COLLECTION_NAME should be the name of your collection. We recommended using ```funko-collection```. Add this after the "=".
-6. Save your file.
+4. MONGODB_URI should be your full connection string that we created in step 2.2, including your password. Add this after the "=".
+5. DATABASE_NAME should be the name of your database.  We recommended using ```funko-database```. Add this after the "=".
+6. COLLECTION_NAME should be the name of your collection. We recommended using ```funko-collection```. Add this after the "=".
+7. Save your file.
 
 ## 4.3 Install Dependencies
 
@@ -60,12 +61,8 @@
 
 ## 4.4 Improve the Website
 # ***TODO: WHAT ARE WE GOING TO HAVE THE USERS DO HERE?***
-1. Change directories into `/start`
-
-2. Install the dependencies:
-```bash
-npm i
-```
+1. Update the Header file to show their name.
+2. Update the FunkoCard to show additional properties.
 
 3. Open the project in your editor, run `npm start` to see the bare site. Make meaningful changes to improve it (e.g., update the UI or fix small bugs) using MaterialUI to match the final site.
 

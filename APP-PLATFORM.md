@@ -27,10 +27,15 @@ https://github.com/user-attachments/assets/8c0de1da-c15b-4762-a0f1-b933f8adc11e
 3. Copy the contents of your ".env" file you created earlier into the box.
 
     ![Copy your .env file into this box.](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/5-AppPlatform/bulkeditor.png)
-    
+
 4. Click "Save".
 
-## 5.4 Access Your Running Application
+# TODO: FINISH THIS PAGE.
+1. Finish setting everything up.
+2. Watch the build and deploy logs.  They're interesting!
+3. There's a bug.  It will say you have no environment variables.  You do.  You can update if you'd like.
+
+## 5.5 Access Your Running Application
 
 - Once deployed, visit the app's public URL to verify it's running correctly.
 

@@ -28,8 +28,8 @@ There is also search funtionality that you will be build in order to quickly fin
 
 ### What are we going to learn?
 
-- How to build a card component app using MaterialUI to display data
-- Setting up a Managed Mongo Database in DigitalOcean
+- How to build a next.js card component app using MaterialUI to display data
+- Setting up a Managed MongoDB on DigitalOcean
 - Taking a dataset and ingesting that in Compass
 - Deploying the site and database to the cloud using DigitalOcean
 - Enabling Autoscaling to handle traffic influx
