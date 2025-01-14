@@ -12,7 +12,7 @@ const FunkoCard: React.FC<FunkoProps> = ({ funkos, setFunkos }) => {
     <>
       {funkos.map((funko) => {
         return (
-          <Card sx={{ maxWidth: 345 }}>
+          <Card key={funko._id.toString()} sx={{ maxWidth: 345 }}>
             <CardMedia
               component="img"
               sx={{ height: 140 }}

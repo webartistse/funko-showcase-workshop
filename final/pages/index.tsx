@@ -50,7 +50,6 @@ export default function Home({
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
   const [search, setSearch] = useState("");
   const [funkos, setFunkos] = useState(funkosFetch);
-
   useEffect(() => {
     const filterFunkos = (funko: Funko) => {
       return (
