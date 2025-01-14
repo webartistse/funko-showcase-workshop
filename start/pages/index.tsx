@@ -59,7 +59,7 @@ export default function Home({
       );
     };
 
-    const filteredFunkos = funkos.filter(filterFunkos);
+    const filteredFunkos = funkosFetch.filter(filterFunkos);
     setFunkos(filteredFunkos);
   }, [search]);
 
