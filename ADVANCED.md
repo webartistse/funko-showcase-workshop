@@ -35,6 +35,8 @@ https://github.com/user-attachments/assets/a8813707-cc57-4dc1-9675-380e19c3f28a
      - `-n` specifies the number of requests (e.g., 20,000).
      - `-c` specifies the number of concurrent users (e.g., 100).
      - You can check out the [hey](https://github.com/rakyll/hey) docs to see the various options. 
+     
+     ![hey_load_test_terminal_response](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/6-Advanced/hey_load_test_terminal_response.png)
 
 3. **Monitor Performance**:
    - Once the load test starts, head back to the Insights tab in the App Platform dashboard. Here, you can watch real-time metrics like CPU usage and the number of containers scaling up or down to meet demand.
