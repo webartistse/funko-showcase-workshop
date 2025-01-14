@@ -47,13 +47,10 @@
     ```
 
 ## 4.4 Run Your Website Locally
-1. Build the application by running the following command in the same `/start` directory.
+
+1. Run the application:
     ```bash
-    npm run build
-    ```
-2. Run the application:
-    ```bash
-    npm run start
+    npm run dev
     ```
 3. Open your browser and navigate to `http://localhost:3000` or whatever the open port is to see what the site looks like.
 
