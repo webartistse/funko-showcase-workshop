@@ -1,36 +1,48 @@
 # 6. Advanced Features
 
-## 6.1 Create the Ability to Add/Edit
+In this session, you’ll set up autoscaling for your Funko Showcase app to ensure it can handle high traffic. You’ll configure autoscaling in DigitalOcean’s App Platform and test it using simulated traffic. Let’s get started!
 
-- Update the application to allow users to add or edit data.
+---
 
-## 6.2 Autoscaling and Testing
+## 6.1 Autoscaling Configuration
 
 https://github.com/user-attachments/assets/a8813707-cc57-4dc1-9675-380e19c3f28a
 
-1. Go back into the App Platform and choose the App, then select **Settings**, than the App Component.
-2. Scroll down to the **Resource Size** and click edit.
-3. Change your **Instance Size** to the Dedicated plan of $29.00/mo. Only Dedicated plans allow for Autoscaling to be turned on.
-4. Check the box to turn on autoscale; **Set containers to autoscale**.
-5. Set your minimum and maximum number of containers as well as your CPU % threshold. You can leave these as defaults.
+1. Navigate back to the [App Platform](https://cloud.digitalocean.com/apps). 
+2. Select your app from the `App Platform` dashboard.
+3. Go to the `Settings` tab, then select **App Components**.
+4. **Enable Autoscaling**:
+   - Scroll to the `Resource Size` section and click **Edit**.
+   - Change the **Instance Size** to a Dedicated Plan ($29.00/month). *Only Dedicated plans allow for Autoscaling to be turned on.*
+   - Check the box to enable autoscaling: **Set containers to autoscale**.
+   - Set your minimum and maximum number of containers as well as your CPU % threshold. You can leave these as defaults.
+   - Save your changes.
+---
 
-## 6.3 Test Autoscaling
+## 6.2 Testing Autoscaling
 
-1. Open your terminal
-2. If you haven't installed [hey](https://github.com/rakyll/hey) yet, install that with `brew install hey`.
-3. Once `hey` is installed, run this command:
+1. **Install Testing Tools**:
+   - If not already installed, use Homebrew to install `hey`, a load-testing tool:
+     ```bash
+     brew install hey
+     ```
 
-```
-hey [options...] <url>
-```
+2. **Run Load Test**:
+   - Execute a load test against your app’s public URL:
+     ```bash
+     hey -n 20000 -c 100 <your_digitalocean_app_public_url>
+     ```
+     - `-n` specifies the number of requests (e.g., 20,000).
+     - `-c` specifies the number of concurrent users (e.g., 100).
+     - You can check out the [hey](https://github.com/rakyll/hey) docs to see the various options. 
 
-You can check out the [hey](https://github.com/rakyll/hey) docs to see the various options. The one we run is `-n` for number of requests, followed by that number, like 20000.
+3. **Monitor Performance**:
+   - Once the load test starts, head back to the Insights tab in the App Platform dashboard. Here, you can watch real-time metrics like CPU usage and the number of containers scaling up or down to meet demand.
+   - Look for patterns: when traffic spikes, additional containers should spin up automatically to keep your app responsive. As the load decreases, the system will gracefully scale back down to your defined minimum container count, optimizing costs.
+   - Take note of the CPU % graph. It’s a great way to understand how your app handles stress and adapts to changing traffic levels. The goal is to keep your app running smoothly without overprovisioning resources.
+   
+4. **Evaluate Results**:
+   - Ensure the app maintains performance under load.
+   - Verify containers scale back down once traffic subsides.
 
-The url you provide is the deployed url that DigitalOcean provides.
-
-4. Wait until the requests end and then go back to the Cloud Console and go to the **Insights** tab in the App. You will see a graph that updates in real time showing the CPU%. Depending on how many min and max containers you set, as well as the % of CPU throttle, you will notice that the max amount of nodes spin up when the threshold is met or exceeded to handle the influx in traffic. Then after some time the nodes spin back down to the minimum you set.
-
-![Autoscaling working](https://funko-workshop.nyc3.digitaloceanspaces.com/autoscaling/autoscaling-kicked-on.jpg)
-
-
-
+![Autoscaling Visualization](https://funko-workshop.nyc3.digitaloceanspaces.com/autoscaling/autoscaling-kicked-on.jpg)
