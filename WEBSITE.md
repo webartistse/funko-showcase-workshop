@@ -21,14 +21,9 @@
   ![Clone the repo](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/4-Website/clonerepo.png)
 
 ## 4.3 Add Your Connection String & Database Information
-1. In the root folder of your project, find a file named `.envsample`.
+1. In the `/start` folder of your project, find a file named `.envsample`.
 2. Rename this file to `.env`.
-3. Open this file, and copy & paste this text into the file, and add your specific details.
-    ```bash
-    MONGODB_URI=
-    DATABASE_NAME=
-    COLLECTION_NAME=
-    ```
+3. Open this file, and add your specific details.
 4. MONGODB_URI should be your full connection string that we created in step 2.2, including your password. Add this after the "=".
 5. DATABASE_NAME should be the name of your database.  We recommended using ```funko-database```. Add this after the "=".
 6. COLLECTION_NAME should be the name of your collection. We recommended using ```funko-collection```. Add this after the "=".
