@@ -1,6 +1,6 @@
 # 3. Storage Creation
 
-https://github.com/user-attachments/assets/37c57277-7bec-4359-b56f-1b07e5699954
+https://github.com/user-attachments/assets/a01b9a9c-2ae4-4b32-bf13-9390d8fb24f9
 
 ## 3.1 Set up Spaces Bucket
 
