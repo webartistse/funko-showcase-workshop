@@ -17,7 +17,7 @@ https://github.com/user-attachments/assets/ec6ae7d7-525f-44ac-8beb-1b0656739173
 
     ![Default choices screenshot.](https://doimages.nyc3.cdn.digitaloceanspaces.com/GitHub/funko-showcase-workshop/2-Database/database_config.png)
 
-5. Provisioning your database will take about 5 minutes. Might be time to refill your water, or grab a quick snack.
+5. ![caution](https://web.archive.org/web/20090830180458/http://geocities.com/WallStreet/Floor/3945/picture/caution2.gif) **Provisioning your database will take about 5 minutes.** Might be time to refill your water, or grab a quick snack.
 
 ## 2.2 Setup Compass
 
