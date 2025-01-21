@@ -73,7 +73,9 @@ export default function Home({
       <Header />
       <Container maxWidth="lg">
         <SearchBar setSearch={setSearch} />
-        <AddFunkoButton setFunkos={setFunkos} />
+
+        {/* Insert code for Add Button component here */}
+
         <main>
           <Box display="grid" gridTemplateColumns="repeat(3, 1fr)" gap={4}>
             <FunkoCard funkos={funkos} setFunkos={setFunkos} />
