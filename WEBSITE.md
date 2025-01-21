@@ -71,13 +71,8 @@
     ```
 3. Change the `Funko Showcase` text to something custom to you, like `Jeff's Funko Collection`.
 4. Save the file.
-5. Build and run your application again to see the changes in your browser.
-    ```bash
-      npm run build
-      npm run start
-    ```
-6. Refresh your browser to see your changes.
-7. Now would also be a fun time to add another element to your database.  You can click the `Add Funko` button to add another entry to your database.
+5. By having `npm run dev` running, the browser will reload automatically with your changes.
+6. Now would also be a fun time to add another element to your database.  You can click the `Add Funko` button to add another entry to your database.
 
 ## 4.6 Commit Changes to GitHub
 
