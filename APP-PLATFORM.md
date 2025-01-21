@@ -80,22 +80,44 @@ https://github.com/user-attachments/assets/8c0de1da-c15b-4762-a0f1-b933f8adc11e
     <Typography variant="body2" color="text.secondary">Released: {funko.yearReleased}</Typography>
     <Typography variant="body2" color="text.secondary">Number in Line: {funko.numberInLine}</Typography>
     ```
-9. Finally, we're going to give users the ability to edit items in their collection.  (We all make mistakes, right?)  We can add an Edit button at the bottom of each card. Since this is not technically `CardContent` but still part of the `Card`, we are going to put this element right after the closing `</CardContent>` tag.
+
+## 5.7 Add an Edit Button
+
+1. W're going to give users the ability to edit items in their collection.  (We all make mistakes, right?)  We can add an Edit button at the bottom of each card. Since this is not technically `CardContent` but still part of the `Card`, we are going to put this element right after the closing `</CardContent>` tag.
     ```html
     <EditFunkoButton funko={funko} setFunkos={setFunkos} />
     ```
     > **NOTE:** If you ever get stuck, and can't fix your code, there's a copy of the entire app in the `/final` folder that is complete.  You can use those files if you need to fix something.
-10. The Edit form and interface was already created for you, so after you rebuild and run your app again locally, you should see all of this functionality visible and working!
-    ```bash
-      npm run build
-      npm run start
-    ```
-11. When you're happy with how your new cards appear, it's time for the AppPlat deployment magic. To best experience this, I recommend having a browser tab open to your AppPlat app. (It's the page where you watched the Build and Deploy logs earlier.)  When you're ready, commit your changes and push them to GitHub.
+2. Navigate to the `EditFunkoButton.tsx` file in the `/components/EditFunkoButton` directory.
+3. In the code block below, you are going to modify it to have the `<Button>` element as well as `<Digalog>` and `<DialogContent>` elements. Within the `<DigalogContent>` you are going to had 5 `<TextField>'`s for each of the data properties in the databse. You can choose the order of those but a good practice is to match the order that the data is displayed.
+```html
+          <TextField
+            margin=""
+            name=""
+            label=""
+            type=""
+            fullWidth
+            value={}
+            onChange={handleInputChange}
+          />
+```
+4. At the end of the `<DialogContent?` componenty ou will add a `<DialogActions>` component and within that will be two `<Button>` elements. One will be for the user to cancel the edit and the other will be for the user to submit the edit. Change the color of the buttons to match any color provided by MaterialUI.
+```html
+          <DialogActions>
+            <Button onClick={handleClose} color="">
+              Cancel
+            </Button>
+            <Button onClick={handleEdit} color="">
+              Submit
+            </Button>
+          </DialogActions>
+```
+5. When you're happy with how your new cards appear, it's time for the AppPlat deployment magic. To best experience this, I recommend having a browser tab open to your AppPlat app. (It's the page where you watched the Build and Deploy logs earlier.)  When you're ready, commit your changes and push them to GitHub.
     ```bash
     git add .
     git commit -m "Initial commit"
     git push origin main
     ```
-12. Now go watch that App Platform page!  It will automatically recognize that you made changes to your code, and auto-builds and auto-deploys them for you!  When it's done, you should see your new `Card` changes at your production URL!
+6. Now go watch that App Platform page!  It will automatically recognize that you made changes to your code, and auto-builds and auto-deploys them for you!  When it's done, you should see your new `Card` changes at your production URL!
 
 → [Next Up: Advanced Features](ADVANCED.md)
