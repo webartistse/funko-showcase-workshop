@@ -81,7 +81,7 @@ https://github.com/user-attachments/assets/f602e8b8-8f78-403e-9d21-e481826eb6df
     <Typography variant="body2" color="text.secondary">Number in Line: {funko.numberInLine}</Typography>
     ```
 
-## 5.7 Add an Edit Button
+## 5.7 **[EXTRA CREDIT]** Add an Edit Button
 
 1. We're going to give users the ability to edit items in their collection.  (We all make mistakes, right?)  We can add an Edit button at the bottom of each card. Since this is not technically `CardContent` but still part of the `Card`, we are going to put this element right after the closing `</CardContent>` tag.
     ```html
@@ -112,7 +112,7 @@ https://github.com/user-attachments/assets/f602e8b8-8f78-403e-9d21-e481826eb6df
     </Button>
 </DialogActions>
 ```
-## 5.8 Add an Add Button
+## 5.8 **[EXTRA CREDIT]** Add an Add Button
 
 1. Now let's say we want to add an "Add Button" to our app so users can add new items to their collection.  We can add a button to the top of the page that will open a dialog box with a form for the user to fill out.  This form will be similar to the one we used to edit items in the collection.
 
