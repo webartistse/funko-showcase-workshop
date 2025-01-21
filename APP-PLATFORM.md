@@ -1,6 +1,6 @@
 # 5. Introduction to App Platform
 
-https://github.com/user-attachments/assets/8c0de1da-c15b-4762-a0f1-b933f8adc11e
+https://github.com/user-attachments/assets/f602e8b8-8f78-403e-9d21-e481826eb6df
 
 ## 5.1 Getting Started with DigitalOcean App Platform
 
