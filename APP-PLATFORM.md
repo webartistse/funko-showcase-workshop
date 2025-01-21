@@ -120,4 +120,6 @@ https://github.com/user-attachments/assets/f602e8b8-8f78-403e-9d21-e481826eb6df
     ```
 6. Now go watch that App Platform page!  It will automatically recognize that you made changes to your code, and auto-builds and auto-deploys them for you!  When it's done, you should see your new `Card` changes at your production URL!
 
+## 5.8 Add an Add Button
+
 → [Next Up: Advanced Features](ADVANCED.md)
