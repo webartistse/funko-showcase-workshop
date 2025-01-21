@@ -152,12 +152,18 @@ https://github.com/user-attachments/assets/f602e8b8-8f78-403e-9d21-e481826eb6df
     </Button>
 </DialogActions>
 ```
-6. When you're happy with how your new cards appear, it's time for the AppPlat deployment magic. To best experience this, I recommend having a browser tab open to your AppPlat app. (It's the page where you watched the Build and Deploy logs earlier.)  When you're ready, commit your changes and push them to GitHub.
+6. Navigate to the `index.tsx` file in the `/pages` directory.
+7. Add the following line of code below the `<SearchBar>` component. This will autoimport the component at the top of the file and will add the "Add Funko!" button to the top of the page.
+```html
+<AddFunkoButton setFunkos={setFunkos} />
+```
+
+8. When you're happy with how your new cards appear, it's time for the AppPlat deployment magic. To best experience this, I recommend having a browser tab open to your AppPlat app. (It's the page where you watched the Build and Deploy logs earlier.)  When you're ready, commit your changes and push them to GitHub.
     ```bash
     git add .
     git commit -m "Initial commit"
     git push origin main
     ```
-7. Now go watch that App Platform page!  It will automatically recognize that you made changes to your code, and auto-builds and auto-deploys them for you!  When it's done, you should see your new `Card` changes at your production URL!
+9. Now go watch that App Platform page!  It will automatically recognize that you made changes to your code, and auto-builds and auto-deploys them for you!  When it's done, you should see your new `Card` changes at your production URL!
 
 → [Next Up: Advanced Features](ADVANCED.md)
