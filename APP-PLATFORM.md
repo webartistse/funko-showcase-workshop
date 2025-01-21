@@ -83,7 +83,7 @@ https://github.com/user-attachments/assets/f602e8b8-8f78-403e-9d21-e481826eb6df
 
 ## 5.7 Add an Edit Button
 
-1. W're going to give users the ability to edit items in their collection.  (We all make mistakes, right?)  We can add an Edit button at the bottom of each card. Since this is not technically `CardContent` but still part of the `Card`, we are going to put this element right after the closing `</CardContent>` tag.
+1. We're going to give users the ability to edit items in their collection.  (We all make mistakes, right?)  We can add an Edit button at the bottom of each card. Since this is not technically `CardContent` but still part of the `Card`, we are going to put this element right after the closing `</CardContent>` tag.
     ```html
     <EditFunkoButton funko={funko} setFunkos={setFunkos} />
     ```
@@ -91,35 +91,73 @@ https://github.com/user-attachments/assets/f602e8b8-8f78-403e-9d21-e481826eb6df
 2. Navigate to the `EditFunkoButton.tsx` file in the `/components/EditFunkoButton` directory.
 3. In the code block below, you are going to modify it to have the `<Button>` element as well as `<Dialog>` and `<DialogContent>` elements. Within the `<DigalogContent>` you are going to had 5 `<TextField>'`s for each of the data properties in the databse. You can choose the order of those but a good practice is to match the order that the data is displayed.
 ```html
-          <TextField
-            margin=""
-            name=""
-            label=""
-            type=""
-            fullWidth
-            value={}
-            onChange={handleInputChange}
-          />
+<TextField
+    margin=""
+    name=""
+    label=""
+    type=""
+    fullWidth
+    value={}
+    onChange={handleInputChange}
+/>
 ```
-4. At the end of the `<DialogContent?` componenty ou will add a `<DialogActions>` component and within that will be two `<Button>` elements. One will be for the user to cancel the edit and the other will be for the user to submit the edit. Change the color of the buttons to match any color provided by MaterialUI.
+4. At the end of the `<DialogContent>` component you will add a `<DialogActions>` component and within that will be two `<Button>` elements. One will be for the user to cancel the edit and the other will be for the user to submit the edit. Change the color of the buttons to match any color provided by MaterialUI.
 ```html
-          <DialogActions>
-            <Button onClick={handleClose} color="">
-              Cancel
-            </Button>
-            <Button onClick={handleEdit} color="">
-              Submit
-            </Button>
-          </DialogActions>
+<DialogActions>
+    <Button onClick={handleClose} color="">
+        Cancel
+    </Button>
+    <Button onClick={handleEdit} color="">
+        Submit
+    </Button>
+</DialogActions>
 ```
-5. When you're happy with how your new cards appear, it's time for the AppPlat deployment magic. To best experience this, I recommend having a browser tab open to your AppPlat app. (It's the page where you watched the Build and Deploy logs earlier.)  When you're ready, commit your changes and push them to GitHub.
+## 5.8 Add an Add Button
+
+1. Now let's say we want to add an "Add Button" to our app so users can add new items to their collection.  We can add a button to the top of the page that will open a dialog box with a form for the user to fill out.  This form will be similar to the one we used to edit items in the collection.
+
+2. Navigate to the `AddFunkoButton.tsx` file in the `/components/AddFunkoButton` directory.
+
+3. In the code block below, you are going to modify it to have the `<Button>` element as well as `<Dialog>`, `<DialogTitle>` and `<DialogContent>` elements. Within the `<DigalogContent>` you are going to add 5 `<TextField>'`s for each of the data properties in the databse. You can choose the order of those but a good practice is to match the order that the data is displayed.
+
+4. The `margin` property is a part of the MaterialUI component. You can change this based on how you want the vertical spacing to look. For more info on that, check out this link [TextField API](https://mui.com/material-ui/api/text-field/).
+```html
+<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '10px' }}>
+</div>
+```
+```html
+<Button variant="contained" color="secondary" onClick={handleClickOpen}>
+    Add Funko!
+</Button>
+```
+```html
+<TextField
+    margin=""
+    name=""
+    label=""
+    type=""
+    fullWidth
+    value={}
+    onChange={handleInputChange}
+/>
+```
+5. Within the `<Dialog>` component, you will add a `<DialogActions>` component and within that will be two `<Button>` elements. One will be for the user to cancel the addition and the other will be for the user to submit the addition. Change the color of the buttons to match any color provided by MaterialUI.
+```html
+<DialogActions>
+    <Button onClick={handleClose} color="">
+        Cancel
+    </Button>
+    <Button onClick={handleSubmit} color="">
+        Submit
+    </Button>
+</DialogActions>
+```
+6. When you're happy with how your new cards appear, it's time for the AppPlat deployment magic. To best experience this, I recommend having a browser tab open to your AppPlat app. (It's the page where you watched the Build and Deploy logs earlier.)  When you're ready, commit your changes and push them to GitHub.
     ```bash
     git add .
     git commit -m "Initial commit"
     git push origin main
     ```
-6. Now go watch that App Platform page!  It will automatically recognize that you made changes to your code, and auto-builds and auto-deploys them for you!  When it's done, you should see your new `Card` changes at your production URL!
-
-## 5.8 Add an Add Button
+7. Now go watch that App Platform page!  It will automatically recognize that you made changes to your code, and auto-builds and auto-deploys them for you!  When it's done, you should see your new `Card` changes at your production URL!
 
 → [Next Up: Advanced Features](ADVANCED.md)
