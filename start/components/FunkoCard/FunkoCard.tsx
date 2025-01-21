@@ -20,6 +20,10 @@ const FunkoCard: React.FC<FunkoProps> = ({ funkos, setFunkos }) => {
               image={funko.imageUrl}
               alt={funko.character}
             />
+
+            {/* Add the Card code here */}
+            {/* Add the EditFunkoButton component here */}
+
           </Card>
         );
       })}
