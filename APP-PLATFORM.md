@@ -161,7 +161,7 @@ https://github.com/user-attachments/assets/f602e8b8-8f78-403e-9d21-e481826eb6df
 8. When you're happy with how your new cards appear, it's time for the AppPlat deployment magic. To best experience this, I recommend having a browser tab open to your AppPlat app. (It's the page where you watched the Build and Deploy logs earlier.)  When you're ready, commit your changes and push them to GitHub.
     ```bash
     git add .
-    git commit -m "Initial commit"
+    git commit -m "ADD NEW COMMIT MESSAGE HERE OF YOUR CHOICE"
     git push origin main
     ```
 9. Now go watch that App Platform page!  It will automatically recognize that you made changes to your code, and auto-builds and auto-deploys them for you!  When it's done, you should see your new `Card` changes at your production URL!
