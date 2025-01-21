@@ -73,6 +73,7 @@ export default function Home({
       <Header />
       <Container maxWidth="lg">
         <SearchBar setSearch={setSearch} />
+        <AddFunkoButton setFunkos={setFunkos} />
 
         {/* Insert code for Add Button component here */}
 
