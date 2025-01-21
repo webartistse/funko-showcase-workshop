@@ -48,14 +48,59 @@ const EditFunkoButton = ({ setFunkos, funko }: { setFunkos: React.Dispatch<React
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle>Enter Details</DialogTitle>
         <DialogContent>
-
-          {/* Add Text Fields here */}
-
+          <TextField
+            margin="normal"
+            name="imageUrl"
+            label="imageUrl"
+            type="text"
+            fullWidth
+            value={formValues.imageUrl}
+            onChange={handleInputChange}
+          />
+          <TextField
+            margin="normal"
+            name="source"
+            label="source"
+            type="text"
+            fullWidth
+            value={formValues.source}
+            onChange={handleInputChange}
+          />
+          <TextField
+            margin="normal"
+            name="character"
+            label="character"
+            type="text"
+            fullWidth
+            value={formValues.character}
+            onChange={handleInputChange}
+          />
+          <TextField
+            margin="normal"
+            name="yearReleased"
+            label="yearReleased"
+            type="text"
+            fullWidth
+            value={formValues.yearReleased}
+            onChange={handleInputChange}
+          />
+          <TextField
+            margin="normal"
+            name="numberInLine"
+            label="numberInLine"
+            type="text"
+            fullWidth
+            value={formValues.numberInLine}
+            onChange={handleInputChange}
+          />
         </DialogContent>
         <DialogActions>
-
-          {/* Add Buttons here */}
-
+          <Button onClick={handleClose} color="warning">
+            Cancel
+          </Button>
+          <Button onClick={handleSubmit} color="success">
+              Submit
+          </Button>
         </DialogActions>
       </Dialog>
     </div>
